@@ -1,0 +1,5 @@
+domain,category,title,url,source,expected_type,tags
+cybersecurity,act,Information Technology Act 2000,https://www.indiacode.nic.in/handle/123456789/1999,indiacode,auto,"cybercrime;cybersecurity;it act"
+cybersecurity,policy,CERT-In Directions 2022,https://www.cert-in.org.in,cert-in,html,"incident reporting;security operations"
+property_rights,act,Transfer of Property Act 1882,https://www.indiacode.nic.in/handle/123456789/2325,indiacode,auto,"property;transfer"
+property_rights,act,Registration Act 1908,https://www.indiacode.nic.in/handle/123456789/2263,indiacode,auto,"property;registration"

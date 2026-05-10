@@ -1,0 +1,29 @@
+{
+  "seeds": [
+    "https://www.indiacode.nic.in/",
+    "https://www.indiacode.nic.in/handle/123456789/1362/browse?type=title",
+    "https://www.mha.gov.in/en",
+    "https://www.cert-in.org.in/"
+  ],
+  "domain_keywords": {
+    "cybersecurity": [
+      "cyber",
+      "computer",
+      "information technology",
+      "data protection",
+      "digital",
+      "hacking",
+      "security"
+    ],
+    "property_rights": [
+      "property",
+      "land",
+      "transfer",
+      "registration",
+      "lease",
+      "mortgage",
+      "sale deed",
+      "tenancy"
+    ]
+  }
+}
