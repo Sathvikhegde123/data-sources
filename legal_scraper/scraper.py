@@ -5,6 +5,7 @@ import re
 import time
 from pathlib import Path
 from typing import Optional
+from urllib.parse import urlparse
 
 import pandas as pd
 import requests
@@ -43,6 +44,17 @@ def slugify(value: str) -> str:
     return value.strip("_") or "untitled"
 
 
+def unique_key_from_url(url: str) -> str:
+    parsed = urlparse(url)
+    path_parts = [p for p in parsed.path.split("/") if p]
+    if len(path_parts) >= 2 and path_parts[0] == "doc":
+        doc_id = path_parts[1]
+        if doc_id.isdigit():
+            return f"doc_{doc_id}"
+    tail = path_parts[-1] if path_parts else parsed.netloc
+    return slugify(tail)[:40] or "page"
+
+
 def build_driver(headless: bool) -> webdriver.Chrome:
     options = Options()
     if headless:
@@ -53,6 +65,20 @@ def build_driver(headless: bool) -> webdriver.Chrome:
     return webdriver.Chrome(options=options)
 
 
+def is_access_denied_page(html: str, current_url: str) -> bool:
+    lowered = html.lower()
+    deny_markers = [
+        "access denied",
+        "you don't have permission to access",
+        "errors.edgesuite.net",
+        "request blocked",
+    ]
+    if any(marker in lowered for marker in deny_markers):
+        return True
+    # Some edge/WAF pages don't include a clean title but still expose deny hints in URL
+    return "errors.edgesuite.net" in current_url.lower()
+
+
 def fetch_pdf(pdf_url: str, output_path: Path, timeout: int = 30) -> bool:
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
@@ -60,6 +86,10 @@ def fetch_pdf(pdf_url: str, output_path: Path, timeout: int = 30) -> bool:
     try:
         resp = requests.get(pdf_url, headers=headers, timeout=timeout)
         resp.raise_for_status()
+        content_type = resp.headers.get("Content-Type", "").lower()
+        if "pdf" not in content_type:
+            logging.warning("Skipping non-PDF response from %s (content-type: %s)", pdf_url, content_type)
+            return False
         output_path.parent.mkdir(parents=True, exist_ok=True)
         output_path.write_bytes(resp.content)
         return True
@@ -104,6 +134,8 @@ def scrape_one(
     expected_type = str(row.get("expected_type", "auto")).lower()
 
     title_slug = slugify(title)
+    unique_key = unique_key_from_url(url)
+    file_stem = f"{title_slug}_{unique_key}"
     result = {
         "domain": domain,
         "title": title,
@@ -125,8 +157,16 @@ def scrape_one(
             current_url = driver.current_url
             html = driver.page_source
 
+            if is_access_denied_page(html, current_url):
+                result["status"] = "blocked"
+                result["error"] = (
+                    f"Access denied by server/WAF for host {urlparse(current_url).netloc or urlparse(url).netloc}"
+                )
+                logging.warning("Blocked by server while scraping %s", url)
+                return result
+
             if expected_type != "pdf":
-                html_path = save_html(domain, title_slug, html)
+                html_path = save_html(domain, file_stem, html)
                 result["html_path"] = str(html_path)
 
             pdf_urls = discover_pdf_links(html, current_url)
@@ -134,7 +174,7 @@ def scrape_one(
                 pdf_urls = [current_url] + pdf_urls
 
             for idx, pdf_url in enumerate(pdf_urls[:max_pdf_links], start=1):
-                pdf_name = f"{title_slug}_{idx}.pdf" if len(pdf_urls) > 1 else f"{title_slug}.pdf"
+                pdf_name = f"{file_stem}_{idx}.pdf" if len(pdf_urls) > 1 else f"{file_stem}.pdf"
                 pdf_path = RAW_PDF_DIR / slugify(domain) / pdf_name
                 if fetch_pdf(pdf_url, pdf_path):
                     result["pdf_paths"].append(str(pdf_path))

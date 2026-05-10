@@ -1,0 +1,28 @@
+{
+  "source_file": "C:\\Users\\sathv\\OneDrive\\Documents\\data-sources\\legal_scraper\\raw_html\\property_rights\\section_90_in_the_transfer_of_property_act_1882.html",
+  "document_type": "html",
+  "title": "Section 90 in The Transfer Of Property Act, 1882",
+  "sections": [
+    {
+      "heading": "source",
+      "level": 1,
+      "content": [
+        "Union of India - Section"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "href": "/search/?formInput=cites:24975403",
+      "text": "0"
+    },
+    {
+      "href": "/search/?formInput=citedby:24975403",
+      "text": "223"
+    },
+    {
+      "href": "/doc/515323/",
+      "text": "Entire Act"
+    }
+  ]
+}

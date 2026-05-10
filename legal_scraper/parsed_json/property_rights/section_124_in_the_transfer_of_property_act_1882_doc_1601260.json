@@ -1,0 +1,35 @@
+{
+  "source_file": "C:\\Users\\sathv\\OneDrive\\Documents\\data-sources\\legal_scraper\\raw_html\\property_rights\\section_124_in_the_transfer_of_property_act_1882_doc_1601260.html",
+  "document_type": "html",
+  "title": "Section 124 in The Transfer Of Property Act, 1882",
+  "sections": [
+    {
+      "heading": "source",
+      "level": 1,
+      "content": [
+        "Union of India - Section"
+      ]
+    },
+    {
+      "heading": "124. Gift of existing and future property.—",
+      "level": 2,
+      "content": [
+        "A gift comprising both existing and future property is void as to the latter."
+      ]
+    }
+  ],
+  "links": [
+    {
+      "href": "/search/?formInput=cites:1601260",
+      "text": "0"
+    },
+    {
+      "href": "/search/?formInput=citedby:1601260",
+      "text": "28"
+    },
+    {
+      "href": "/doc/515323/",
+      "text": "Entire Act"
+    }
+  ]
+}

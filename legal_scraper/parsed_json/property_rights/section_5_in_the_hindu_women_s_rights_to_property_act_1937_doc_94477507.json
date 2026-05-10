@@ -1,0 +1,35 @@
+{
+  "source_file": "C:\\Users\\sathv\\OneDrive\\Documents\\data-sources\\legal_scraper\\raw_html\\property_rights\\section_5_in_the_hindu_women_s_rights_to_property_act_1937_doc_94477507.html",
+  "document_type": "html",
+  "title": "Section 5 in The Hindu Women's Rights To Property Act, 1937",
+  "sections": [
+    {
+      "heading": "source",
+      "level": 1,
+      "content": [
+        "Union of India - Section"
+      ]
+    },
+    {
+      "heading": "5. Meaning of expression die intestate",
+      "level": 2,
+      "content": [
+        ".For the purpose of this Act a person shall be deemed to die intestate in respect of all property of which he has not made a testamentary disposition which is capable of taking effect."
+      ]
+    }
+  ],
+  "links": [
+    {
+      "href": "/search/?formInput=cites:94477507",
+      "text": "0"
+    },
+    {
+      "href": "/search/?formInput=citedby:94477507",
+      "text": "15"
+    },
+    {
+      "href": "/doc/80896406/",
+      "text": "Entire Act"
+    }
+  ]
+}

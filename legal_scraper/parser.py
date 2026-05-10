@@ -33,9 +33,76 @@ def clean_text(text: str) -> str:
     return text.strip()
 
 
+def parse_akoma_ntoso(soup: BeautifulSoup, path: Path) -> Dict | None:
+    container = soup.select_one(".akoma-ntoso")
+    if not container:
+        return None
+
+    title_node = container.select_one(".doc_title")
+    title = clean_text(title_node.get_text(" ", strip=True)) if title_node else path.stem
+
+    sections: List[Dict] = []
+    source_node = container.select_one(".docsource_main")
+    if source_node:
+        source_text = clean_text(source_node.get_text(" ", strip=True))
+        if source_text:
+            sections.append(
+                {
+                    "heading": "source",
+                    "level": 1,
+                    "content": [source_text],
+                }
+            )
+
+    for section in container.select("section.akn-section"):
+        heading_node = section.select_one(":scope > h3")
+        heading = clean_text(heading_node.get_text(" ", strip=True)) if heading_node else "section"
+        content: List[str] = []
+
+        for para in section.select(".akn-p"):
+            para_text = clean_text(para.get_text(" ", strip=True))
+            if para_text:
+                content.append(para_text)
+
+        # Fallback for cases where text is inside akn-content without akn-p wrappers
+        if not content:
+            for node in section.select(".akn-content"):
+                node_text = clean_text(node.get_text(" ", strip=True))
+                if node_text:
+                    content.append(node_text)
+
+        if content:
+            sections.append(
+                {
+                    "heading": heading,
+                    "level": 2,
+                    "content": content,
+                }
+            )
+
+    links = []
+    for a in container.find_all("a", href=True):
+        href = a["href"].strip()
+        anchor_text = clean_text(a.get_text(" ", strip=True))
+        if href:
+            links.append({"href": href, "text": anchor_text})
+
+    return {
+        "source_file": str(path),
+        "document_type": "html",
+        "title": title,
+        "sections": sections,
+        "links": links,
+    }
+
+
 def parse_html_file(path: Path) -> Dict:
     html = path.read_text(encoding="utf-8", errors="ignore")
     soup = BeautifulSoup(html, "lxml")
+
+    akn_parsed = parse_akoma_ntoso(soup, path)
+    if akn_parsed is not None:
+        return akn_parsed
 
     title = clean_text(soup.title.text) if soup.title and soup.title.text else path.stem
 

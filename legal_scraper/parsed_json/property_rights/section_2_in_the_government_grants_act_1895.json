@@ -1,0 +1,32 @@
+{
+  "source_file": "C:\\Users\\sathv\\OneDrive\\Documents\\data-sources\\legal_scraper\\raw_html\\property_rights\\section_2_in_the_government_grants_act_1895.html",
+  "document_type": "html",
+  "title": "Section 2 in The Government Grants Act, 1895",
+  "sections": [
+    {
+      "heading": "source",
+      "level": 1,
+      "content": [
+        "Union of India - Section"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "href": "/search/?formInput=cites:907595",
+      "text": "0"
+    },
+    {
+      "href": "/search/?formInput=citedby:907595",
+      "text": "138"
+    },
+    {
+      "href": "/doc/1625086/",
+      "text": "Entire Act"
+    },
+    {
+      "href": "/doc/515323/",
+      "text": "4 of 1882"
+    }
+  ]
+}

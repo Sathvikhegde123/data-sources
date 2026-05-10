@@ -1,0 +1,39 @@
+{
+  "source_file": "C:\\Users\\sathv\\OneDrive\\Documents\\data-sources\\legal_scraper\\raw_html\\property_rights\\transfer_of_property_act_section_53a.html",
+  "document_type": "html",
+  "title": "Section 53A in The Transfer Of Property Act, 1882",
+  "sections": [
+    {
+      "heading": "source",
+      "level": 1,
+      "content": [
+        "Union of India - Section"
+      ]
+    },
+    {
+      "heading": "53A. Part performance.—",
+      "level": 2,
+      "content": [
+        "Where any person contracts to transfer for consideration any immoveable property by writing signed by him or on his behalf from which the terms necessary to constitute the transfer can be ascertained with reasonable certainty,",
+        "and the transferee has, in part performance of the contract, taken possession of the property or any part thereof, or the transferee, being already in possession, continues in possession in part performance of the contract and has done some act in furtherance of the contract,",
+        "and the transferee has performed or is willing to perform his part of the contract,",
+        "then, notwithstanding that where there is an instrument of transfer, that the transfer has not been completed in the manner prescribed therefor by the law for the time being in force, the transferor or any person claiming under him shall be debarred from enforcing against the transferee and persons claiming under him any right in respect of the property of which the transferee has taken or continued in possession, other than a right expressly provided by the terms of the contract:",
+        "Provided that nothing in this section shall affect the rights of a transferee for consideration who has no notice of the contract or of the part performance thereof."
+      ]
+    }
+  ],
+  "links": [
+    {
+      "href": "/search/?formInput=cites:221518",
+      "text": "0"
+    },
+    {
+      "href": "/search/?formInput=citedby:221518",
+      "text": "5385"
+    },
+    {
+      "href": "/doc/515323/",
+      "text": "Entire Act"
+    }
+  ]
+}

@@ -1,0 +1,607 @@
+2026-05-10 16:28:32,713 | INFO | Scraping [1/2]: https://www.indiacode.nic.in/show-type-act/MzA/2?title=Transfer%20of%20Property%20Act%2C%201882
+2026-05-10 16:28:32,997 | INFO | Result: Transfer of Property Act 1882 -> success
+2026-05-10 16:28:32,998 | INFO | Scraping [1/2]: https://www.indiacode.nic.in/show-type-act/MzE/2?title=Registration%20Act%2C%201908
+2026-05-10 16:28:33,229 | INFO | Result: Registration Act 1908 -> success
+2026-05-10 16:28:33,230 | INFO | Scraping [1/2]: https://www.indiacode.nic.in/show-type-act/MzI/2?title=Land%20Acquisition%20Act%2C%201894
+2026-05-10 16:28:33,452 | INFO | Result: Land Acquisition Act 1894 -> success
+2026-05-10 16:28:33,453 | INFO | Scraping [1/2]: https://www.indiacode.nic.in/show-type-act/MzM/2?title=Easements%20Act%2C%201882
+2026-05-10 16:28:33,638 | INFO | Result: Easements Act 1882 -> success
+2026-05-10 16:28:33,639 | INFO | Scraping [1/2]: https://www.indiacode.nic.in/show-type-act/MzQ/2?title=Limitation%20Act%2C%201963
+2026-05-10 16:28:33,821 | INFO | Result: Limitation Act 1963 -> success
+2026-05-10 16:36:37,839 | INFO | Scraping [1/1]: https://www.indiacode.nic.in/show-type-act/MzA/2?title=Transfer%20of%20Property%20Act%2C%201882
+2026-05-10 16:36:37,999 | WARNING | Blocked by server while scraping https://www.indiacode.nic.in/show-type-act/MzA/2?title=Transfer%20of%20Property%20Act%2C%201882
+2026-05-10 16:36:37,999 | INFO | Result: Transfer of Property Act 1882 -> blocked
+2026-05-10 16:36:38,000 | INFO | Scraping [1/1]: https://www.indiacode.nic.in/show-type-act/MzE/2?title=Registration%20Act%2C%201908
+2026-05-10 16:36:38,089 | WARNING | Blocked by server while scraping https://www.indiacode.nic.in/show-type-act/MzE/2?title=Registration%20Act%2C%201908
+2026-05-10 16:36:38,090 | INFO | Result: Registration Act 1908 -> blocked
+2026-05-10 16:36:38,090 | INFO | Scraping [1/1]: https://www.indiacode.nic.in/show-type-act/MzI/2?title=Land%20Acquisition%20Act%2C%201894
+2026-05-10 16:36:38,183 | WARNING | Blocked by server while scraping https://www.indiacode.nic.in/show-type-act/MzI/2?title=Land%20Acquisition%20Act%2C%201894
+2026-05-10 16:36:38,184 | INFO | Result: Land Acquisition Act 1894 -> blocked
+2026-05-10 16:36:38,185 | INFO | Scraping [1/1]: https://www.indiacode.nic.in/show-type-act/MzM/2?title=Easements%20Act%2C%201882
+2026-05-10 16:36:38,291 | WARNING | Blocked by server while scraping https://www.indiacode.nic.in/show-type-act/MzM/2?title=Easements%20Act%2C%201882
+2026-05-10 16:36:38,292 | INFO | Result: Easements Act 1882 -> blocked
+2026-05-10 16:36:38,293 | INFO | Scraping [1/1]: https://www.indiacode.nic.in/show-type-act/MzQ/2?title=Limitation%20Act%2C%201963
+2026-05-10 16:36:38,382 | WARNING | Blocked by server while scraping https://www.indiacode.nic.in/show-type-act/MzQ/2?title=Limitation%20Act%2C%201963
+2026-05-10 16:36:38,383 | INFO | Result: Limitation Act 1963 -> blocked
+2026-05-10 16:50:34,921 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/354224/
+2026-05-10 16:50:36,109 | INFO | Result: Article 31 Constitution -> success
+2026-05-10 16:50:36,110 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/1879190/
+2026-05-10 16:50:36,487 | INFO | Result: Transfer of Property Act Section 108 -> success
+2026-05-10 16:50:36,487 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/80042/
+2026-05-10 16:50:36,885 | INFO | Result: Transfer of Property Act Section 106 -> success
+2026-05-10 16:50:36,885 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/221518/
+2026-05-10 16:50:37,221 | INFO | Result: Transfer of Property Act Section 53A -> success
+2026-05-10 16:50:37,222 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/613871/
+2026-05-10 16:50:37,567 | INFO | Result: Transfer of Property Act Section 54 -> success
+2026-05-10 16:50:37,568 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/1634925/
+2026-05-10 16:50:37,894 | INFO | Result: Transfer of Property Act Section 52 -> success
+2026-05-10 16:50:37,895 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/1768154/
+2026-05-10 16:50:38,242 | INFO | Result: Registration Act Section 49 -> success
+2026-05-10 16:50:38,243 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/85586/
+2026-05-10 16:50:38,553 | INFO | Result: Limitation Act Section 18 -> success
+2026-05-10 16:50:38,554 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/1223371/
+2026-05-10 16:50:38,949 | INFO | Result: Limitation Act Section 27 -> success
+2026-05-10 16:50:38,949 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/170521216/
+2026-05-10 16:50:40,202 | INFO | Result: Property Rights Full Document 1 -> success
+2026-05-10 17:01:25,802 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/354224/
+2026-05-10 17:01:27,040 | INFO | Result: Article 31 in Constitution of India -> success
+2026-05-10 17:01:27,040 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/237570/
+2026-05-10 17:01:28,687 | WARNING | Failed to download PDF https://egazette.nic.in/WriteReadData/2019/210049.pdf (HTTPSConnectionPool(host='egazette.nic.in', port=443): Max retries exceeded with url: /WriteReadData/2019/210049.pdf (Caused by NameResolutionError("HTTPSConnection(host='egazette.nic.in', port=443): Failed to resolve 'egazette.nic.in' ([Errno 11001] getaddrinfo failed)")))
+2026-05-10 17:01:29,276 | INFO | Result: Constitution -> success
+2026-05-10 17:01:29,277 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1369261/
+2026-05-10 17:01:29,692 | INFO | Result: Section 9 in The Income Tax Act, 1961 -> success
+2026-05-10 17:01:29,692 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/789969/
+2026-05-10 17:01:33,680 | INFO | Result: Entire Act -> success
+2026-05-10 17:01:33,681 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/301194/
+2026-05-10 17:01:34,013 | INFO | Result: Section 394 in The Companies Act, 1956 -> success
+2026-05-10 17:01:34,014 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1353758/
+2026-05-10 17:01:37,484 | INFO | Result: Entire Act -> success
+2026-05-10 17:01:37,485 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/85586/
+2026-05-10 17:01:38,013 | INFO | Result: Section 18 in The Limitation Act, 1963 -> success
+2026-05-10 17:01:38,014 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1317393/
+2026-05-10 17:01:38,525 | INFO | Result: Entire Act -> success
+2026-05-10 17:01:38,526 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/938899/
+2026-05-10 17:01:38,892 | INFO | Result: Section 17 in The Income Tax Act, 1961 -> success
+2026-05-10 17:01:38,893 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1879190/
+2026-05-10 17:01:39,362 | INFO | Result: Section 108 in The Transfer Of Property Act, 1882 -> success
+2026-05-10 17:01:39,363 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/515323/
+2026-05-10 17:01:39,830 | INFO | Result: Entire Act -> success
+2026-05-10 17:01:39,830 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/170521216/
+2026-05-10 17:01:41,078 | INFO | Result: Full Document -> success
+2026-05-10 17:01:41,079 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1223371/
+2026-05-10 17:01:41,507 | INFO | Result: Section 27 in The Limitation Act, 1963 -> success
+2026-05-10 17:01:41,507 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1153878/
+2026-05-10 17:01:41,947 | INFO | Result: Section 3 in The Competition Act, 2002 -> success
+2026-05-10 17:01:41,947 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1113485/
+2026-05-10 17:01:42,474 | INFO | Result: Entire Act -> success
+2026-05-10 17:01:42,474 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1172174/
+2026-05-10 17:01:43,039 | INFO | Result: Full Document -> success
+2026-05-10 17:01:43,041 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/99622088/
+2026-05-10 17:01:43,499 | INFO | Result: Full Document -> success
+2026-05-10 17:01:43,500 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1151186/
+2026-05-10 17:01:43,888 | INFO | Result: Full Document -> success
+2026-05-10 17:01:43,888 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/29295224/
+2026-05-10 17:01:44,343 | INFO | Result: Full Document -> success
+2026-05-10 17:01:44,344 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/109322779/
+2026-05-10 17:01:44,764 | INFO | Result: Full Document -> success
+2026-05-10 17:01:44,765 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/547266/
+2026-05-10 17:01:45,203 | INFO | Result: Full Document -> success
+2026-05-10 17:01:45,204 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1853142/
+2026-05-10 17:01:45,605 | INFO | Result: Full Document -> success
+2026-05-10 17:01:45,606 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/117655670/
+2026-05-10 17:01:46,005 | INFO | Result: Section 2 in ﻿The Commercial Courts, Commercial Division And Commercial Appellate Division Of High Courts Act, 2015 -> success
+2026-05-10 17:01:46,006 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/34300021/
+2026-05-10 17:01:46,529 | INFO | Result: Entire Act -> success
+2026-05-10 17:01:46,530 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/569629/
+2026-05-10 17:01:46,969 | INFO | Result: Section 88 in Bihar Reorganisation Act, 2000 -> success
+2026-05-10 17:01:46,970 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1054471/
+2026-05-10 17:01:47,492 | INFO | Result: Entire Act -> success
+2026-05-10 17:01:47,492 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/94477507/
+2026-05-10 17:01:47,909 | INFO | Result: Section 5 in The Hindu Women's Rights To Property Act, 1937 -> success
+2026-05-10 17:01:47,910 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/80896406/
+2026-05-10 17:01:48,352 | INFO | Result: Entire Act -> success
+2026-05-10 17:01:48,353 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/119689183/
+2026-05-10 17:01:48,851 | INFO | Result: Full Document -> success
+2026-05-10 17:01:48,852 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/598874/
+2026-05-10 17:01:49,283 | INFO | Result: Full Document -> success
+2026-05-10 17:01:49,284 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/199952089/
+2026-05-10 17:01:49,728 | INFO | Result: Full Document -> success
+2026-05-10 17:01:49,728 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1026163/
+2026-05-10 17:01:50,229 | INFO | Result: Full Document -> success
+2026-05-10 17:01:50,229 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1549108/
+2026-05-10 17:01:50,714 | INFO | Result: Full Document -> success
+2026-05-10 17:01:50,714 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1832909/
+2026-05-10 17:01:51,169 | INFO | Result: Full Document -> success
+2026-05-10 17:01:51,169 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/772855/
+2026-05-10 17:01:51,660 | INFO | Result: Full Document -> success
+2026-05-10 17:01:51,660 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/392129/
+2026-05-10 17:01:52,156 | INFO | Result: Full Document -> success
+2026-05-10 17:01:52,156 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1105235/
+2026-05-10 17:01:52,672 | INFO | Result: Full Document -> success
+2026-05-10 17:01:52,673 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/105961750/
+2026-05-10 17:01:53,167 | INFO | Result: Full Document -> success
+2026-05-10 17:01:53,167 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/167005194/
+2026-05-10 17:01:53,721 | INFO | Result: Full Document -> success
+2026-05-10 17:01:53,721 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/52028/
+2026-05-10 17:01:54,182 | INFO | Result: Full Document -> success
+2026-05-10 17:01:54,182 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/144094123/
+2026-05-10 17:01:54,653 | INFO | Result: Full Document -> success
+2026-05-10 17:01:54,653 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/22584916/
+2026-05-10 17:01:55,105 | INFO | Result: Full Document -> success
+2026-05-10 17:01:55,105 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/162636106/
+2026-05-10 17:01:55,582 | INFO | Result: Full Document -> success
+2026-05-10 17:01:55,582 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/145802579/
+2026-05-10 17:01:56,061 | INFO | Result: Full Document -> success
+2026-05-10 17:01:56,062 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/170891220/
+2026-05-10 17:01:56,475 | INFO | Result: Full Document -> success
+2026-05-10 17:01:56,476 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/199960465/
+2026-05-10 17:01:57,059 | INFO | Result: Full Document -> success
+2026-05-10 17:01:57,060 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/77046585/
+2026-05-10 17:01:57,511 | INFO | Result: Full Document -> success
+2026-05-10 17:01:57,512 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/185464130/
+2026-05-10 17:01:58,189 | INFO | Result: Full Document -> success
+2026-05-10 17:01:58,190 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/80042/
+2026-05-10 17:01:58,666 | INFO | Result: Section 106 in The Transfer Of Property Act , 1882 -> success
+2026-05-10 17:01:58,667 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/221518/
+2026-05-10 17:01:59,067 | INFO | Result: Section 53A in The Transfer Of Property Act , 1882 -> success
+2026-05-10 17:01:59,068 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/613871/
+2026-05-10 17:01:59,595 | INFO | Result: Section 54 in The Transfer Of Property Act , 1882 -> success
+2026-05-10 17:01:59,596 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1634925/
+2026-05-10 17:01:59,966 | INFO | Result: Section 52 in The Transfer Of Property Act , 1882 -> success
+2026-05-10 17:01:59,967 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1768154/
+2026-05-10 17:02:00,376 | INFO | Result: Section 49 in The Registration Act , 1908 -> success
+2026-05-10 17:02:00,377 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1489134/
+2026-05-10 17:02:00,826 | INFO | Result: Entire Act -> success
+2026-05-10 17:02:00,826 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/3482533/
+2026-05-10 17:02:01,466 | INFO | Result: Transfer of Property Act , 1977 -> success
+2026-05-10 17:02:01,467 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1345438/
+2026-05-10 17:02:01,871 | INFO | Result: Section 3 in The Transfer Of Property Act , 1882 -> success
+2026-05-10 17:02:01,872 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1693670/
+2026-05-10 17:02:02,253 | INFO | Result: Section 53 in The Transfer Of Property Act , 1882 -> success
+2026-05-10 17:02:02,254 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/584197/
+2026-05-10 17:02:02,641 | INFO | Result: Section 41 in The Transfer Of Property Act , 1882 -> success
+2026-05-10 17:02:02,641 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/149328/
+2026-05-10 17:02:03,258 | INFO | Result: Section 85 in The Transfer Of Property Act , 1882 -> success
+2026-05-10 17:02:03,258 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/324708/
+2026-05-10 17:02:03,716 | INFO | Result: Section 32 in The Transfer Of Property Act , 1882 -> success
+2026-05-10 17:02:03,717 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/24975403/
+2026-05-10 17:02:04,130 | INFO | Result: Section 90 in The Transfer Of Property Act , 1882 -> success
+2026-05-10 17:02:04,130 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/907595/
+2026-05-10 17:02:04,855 | INFO | Result: Section 2 in The Government Grants Act , 1895 -> success
+2026-05-10 17:02:04,856 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1625086/
+2026-05-10 17:02:05,290 | INFO | Result: Entire Act -> success
+2026-05-10 17:02:05,291 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/72595235/
+2026-05-10 17:02:05,864 | INFO | Result: Full Document -> success
+2026-05-10 17:02:05,865 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/870157/
+2026-05-10 17:02:06,406 | INFO | Result: Full Document -> success
+2026-05-10 17:02:06,407 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1296130/
+2026-05-10 17:02:07,074 | INFO | Result: Full Document -> success
+2026-05-10 17:02:07,075 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/187154176/
+2026-05-10 17:02:08,698 | INFO | Result: Full Document -> success
+2026-05-10 17:02:08,699 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1064891/
+2026-05-10 17:02:09,513 | INFO | Result: Full Document -> success
+2026-05-10 17:02:09,514 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1269771/
+2026-05-10 17:02:10,133 | INFO | Result: Full Document -> success
+2026-05-10 17:02:10,133 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1601260/
+2026-05-10 17:02:10,645 | INFO | Result: Section 124 in The Transfer Of Property Act , 1882 -> success
+2026-05-10 17:02:10,646 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1906948/
+2026-05-10 17:02:11,284 | INFO | Result: Section 133 in The Transfer Of Property Act , 1882 -> success
+2026-05-10 17:02:11,284 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1243615/
+2026-05-10 17:02:11,855 | INFO | Result: Full Document -> success
+2026-05-10 17:02:11,855 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1577485/
+2026-05-10 17:02:12,828 | INFO | Result: Full Document -> success
+2026-05-10 17:02:12,829 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/313181/
+2026-05-10 17:02:14,068 | INFO | Result: Full Document -> success
+2026-05-10 17:02:14,069 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/838599/
+2026-05-10 17:02:15,075 | INFO | Result: Full Document -> success
+2026-05-10 17:02:15,077 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/51153749/
+2026-05-10 17:02:15,962 | INFO | Result: Full Document -> success
+2026-05-10 17:02:15,963 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/511962/
+2026-05-10 17:02:16,676 | INFO | Result: Full Document -> success
+2026-05-10 17:02:16,677 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/198934/
+2026-05-10 17:02:17,499 | INFO | Result: Full Document -> success
+2026-05-10 17:02:17,500 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/874420/
+2026-05-10 17:02:17,985 | INFO | Result: Full Document -> success
+2026-05-10 17:02:17,985 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/759043/
+2026-05-10 17:02:18,634 | INFO | Result: Full Document -> success
+2026-05-10 17:02:18,635 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/18042/
+2026-05-10 17:02:19,334 | INFO | Result: Full Document -> success
+2026-05-10 17:02:19,334 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1473261/
+2026-05-10 17:02:19,774 | INFO | Result: Full Document -> success
+2026-05-10 17:02:19,774 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/91595011/
+2026-05-10 17:02:20,437 | INFO | Result: Full Document -> success
+2026-05-10 17:02:20,437 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/98169561/
+2026-05-10 17:02:21,186 | INFO | Result: Full Document -> success
+2026-05-10 17:02:21,187 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/363815/
+2026-05-10 17:02:22,024 | INFO | Result: Full Document -> success
+2026-05-10 17:02:22,024 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1699784/
+2026-05-10 17:02:23,701 | INFO | Result: Full Document -> success
+2026-05-10 17:02:23,702 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/975992/
+2026-05-10 17:02:24,814 | INFO | Result: Full Document -> success
+2026-05-10 17:02:24,814 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/88482064/
+2026-05-10 17:02:26,041 | INFO | Result: Full Document -> success
+2026-05-10 17:02:26,041 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/59657876/
+2026-05-10 17:02:26,758 | INFO | Result: Full Document -> success
+2026-05-10 17:02:26,759 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1543285/
+2026-05-10 17:02:27,411 | INFO | Result: Full Document -> success
+2026-05-10 17:02:27,411 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/87985652/
+2026-05-10 17:02:28,263 | INFO | Result: Full Document -> success
+2026-05-10 17:02:28,264 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1693310/
+2026-05-10 17:02:28,814 | INFO | Result: Full Document -> success
+2026-05-10 17:02:28,814 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1828002/
+2026-05-10 17:02:30,108 | INFO | Result: Full Document -> success
+2026-05-10 17:02:30,108 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1158507/
+2026-05-10 17:02:32,459 | INFO | Result: Full Document -> success
+2026-05-10 17:02:32,459 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1144731/
+2026-05-10 17:02:34,386 | INFO | Result: Full Document -> success
+2026-05-10 17:02:34,387 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/526339/
+2026-05-10 17:02:35,510 | INFO | Result: Full Document -> success
+2026-05-10 17:02:35,510 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/133044387/
+2026-05-10 17:02:37,154 | INFO | Result: Full Document -> success
+2026-05-10 17:02:37,154 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1789611/
+2026-05-10 17:02:37,625 | INFO | Result: Full Document -> success
+2026-05-10 17:02:37,625 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/79945213/
+2026-05-10 17:02:38,839 | INFO | Result: Full Document -> success
+2026-05-10 17:02:38,840 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1582713/
+2026-05-10 17:02:39,500 | INFO | Result: Full Document -> success
+2026-05-10 17:02:39,501 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1863270/
+2026-05-10 17:02:39,916 | INFO | Result: Full Document -> success
+2026-05-10 17:02:39,916 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1577160/
+2026-05-10 17:02:40,696 | INFO | Result: Full Document -> success
+2026-05-10 17:02:40,696 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1728726/
+2026-05-10 17:02:41,399 | INFO | Result: Full Document -> success
+2026-05-10 17:02:41,399 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1692328/
+2026-05-10 17:02:41,787 | INFO | Result: Full Document -> success
+2026-05-10 17:02:41,787 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/170098957/
+2026-05-10 17:02:42,523 | INFO | Result: Full Document -> success
+2026-05-10 17:02:42,523 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/194561470/
+2026-05-10 17:02:43,234 | INFO | Result: Full Document -> success
+2026-05-10 17:02:43,234 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/529047/
+2026-05-10 17:02:43,918 | INFO | Result: Full Document -> success
+2026-05-10 17:02:43,918 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1159099/
+2026-05-10 17:02:44,662 | INFO | Result: Full Document -> success
+2026-05-10 17:02:44,663 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1711998/
+2026-05-10 17:02:45,311 | INFO | Result: Full Document -> success
+2026-05-10 17:02:45,311 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/32811487/
+2026-05-10 17:02:46,024 | INFO | Result: Full Document -> success
+2026-05-10 17:02:46,024 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/46863673/
+2026-05-10 17:02:47,242 | INFO | Result: Full Document -> success
+2026-05-10 17:02:47,242 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1076997/
+2026-05-10 17:02:48,060 | INFO | Result: Full Document -> success
+2026-05-10 17:02:48,061 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/849616/
+2026-05-10 17:02:48,722 | INFO | Result: Full Document -> success
+2026-05-10 17:02:48,723 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/213340/
+2026-05-10 17:02:49,426 | INFO | Result: Full Document -> success
+2026-05-10 17:02:49,426 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/164038868/
+2026-05-10 17:02:50,344 | INFO | Result: Full Document -> success
+2026-05-10 17:02:50,345 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/288997/
+2026-05-10 17:02:51,238 | INFO | Result: Full Document -> success
+2026-05-10 17:02:51,238 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/133190430/
+2026-05-10 17:02:51,639 | INFO | Result: Full Document -> success
+2026-05-10 17:02:51,640 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/124606142/
+2026-05-10 17:02:54,307 | INFO | Result: Full Document -> success
+2026-05-10 17:02:54,307 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/251353/
+2026-05-10 17:02:55,073 | INFO | Result: Full Document -> success
+2026-05-10 17:02:55,073 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/139118497/
+2026-05-10 17:02:55,769 | INFO | Result: Full Document -> success
+2026-05-10 17:02:55,770 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/130835646/
+2026-05-10 17:02:56,675 | INFO | Result: Full Document -> success
+2026-05-10 17:02:56,675 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/69542729/
+2026-05-10 17:02:57,513 | INFO | Result: Full Document -> success
+2026-05-10 17:02:57,513 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/54544239/
+2026-05-10 17:02:58,178 | INFO | Result: Full Document -> success
+2026-05-10 17:02:58,178 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/96085858/
+2026-05-10 17:02:59,067 | INFO | Result: Full Document -> success
+2026-05-10 17:02:59,068 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/21713401/
+2026-05-10 17:02:59,586 | INFO | Result: Full Document -> success
+2026-05-10 17:02:59,587 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/104763396/
+2026-05-10 17:03:00,463 | INFO | Result: Full Document -> success
+2026-05-10 17:03:00,463 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/51906627/
+2026-05-10 17:03:01,088 | INFO | Result: Full Document -> success
+2026-05-10 17:03:01,088 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/28740054/
+2026-05-10 17:03:01,760 | INFO | Result: Full Document -> success
+2026-05-10 17:03:01,761 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/82084445/
+2026-05-10 17:03:02,387 | INFO | Result: Full Document -> success
+2026-05-10 17:03:02,387 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/37313227/
+2026-05-10 17:03:03,027 | INFO | Result: Full Document -> success
+2026-05-10 17:03:03,028 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/98853113/
+2026-05-10 17:03:03,729 | INFO | Result: Full Document -> success
+2026-05-10 17:03:03,730 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1120139/
+2026-05-10 17:03:04,343 | INFO | Result: Full Document -> success
+2026-05-10 17:03:04,343 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/803172/
+2026-05-10 17:03:05,208 | INFO | Result: Full Document -> success
+2026-05-10 17:03:05,208 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1480466/
+2026-05-10 17:03:05,971 | INFO | Result: Full Document -> success
+2026-05-10 17:03:05,972 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1824281/
+2026-05-10 17:03:06,645 | INFO | Result: Full Document -> success
+2026-05-10 17:03:06,646 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/397599/
+2026-05-10 17:03:07,396 | INFO | Result: Full Document -> success
+2026-05-10 17:03:07,396 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/107503577/
+2026-05-10 17:03:08,097 | INFO | Result: Full Document -> success
+2026-05-10 17:03:08,097 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/225447/
+2026-05-10 17:03:08,767 | INFO | Result: Full Document -> success
+2026-05-10 17:03:08,768 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/680600/
+2026-05-10 17:03:09,399 | INFO | Result: Full Document -> success
+2026-05-10 17:03:09,400 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/72126677/
+2026-05-10 17:03:10,017 | INFO | Result: Full Document -> success
+2026-05-10 17:04:32,920 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/354224/
+2026-05-10 17:04:34,268 | INFO | Result: Article 31 in Constitution of India -> success
+2026-05-10 17:04:34,268 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/237570/
+2026-05-10 17:04:36,307 | WARNING | Failed to download PDF https://egazette.nic.in/WriteReadData/2019/210049.pdf (HTTPSConnectionPool(host='egazette.nic.in', port=443): Max retries exceeded with url: /WriteReadData/2019/210049.pdf (Caused by NameResolutionError("HTTPSConnection(host='egazette.nic.in', port=443): Failed to resolve 'egazette.nic.in' ([Errno 11001] getaddrinfo failed)")))
+2026-05-10 17:04:37,090 | INFO | Result: Constitution -> success
+2026-05-10 17:04:37,091 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1369261/
+2026-05-10 17:04:37,582 | INFO | Result: Section 9 in The Income Tax Act, 1961 -> success
+2026-05-10 17:04:37,583 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/789969/
+2026-05-10 17:04:42,868 | INFO | Result: Entire Act -> success
+2026-05-10 17:04:42,869 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/301194/
+2026-05-10 17:04:43,318 | INFO | Result: Section 394 in The Companies Act, 1956 -> success
+2026-05-10 17:04:43,318 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1353758/
+2026-05-10 17:04:47,158 | INFO | Result: Entire Act -> success
+2026-05-10 17:04:47,159 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/85586/
+2026-05-10 17:04:47,559 | INFO | Result: Section 18 in The Limitation Act, 1963 -> success
+2026-05-10 17:04:47,560 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1317393/
+2026-05-10 17:04:48,209 | INFO | Result: Entire Act -> success
+2026-05-10 17:04:48,211 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/938899/
+2026-05-10 17:04:48,626 | INFO | Result: Section 17 in The Income Tax Act, 1961 -> success
+2026-05-10 17:04:48,626 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1879190/
+2026-05-10 17:04:49,035 | INFO | Result: Section 108 in The Transfer Of Property Act, 1882 -> success
+2026-05-10 17:04:49,036 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/515323/
+2026-05-10 17:04:49,742 | INFO | Result: Entire Act -> success
+2026-05-10 17:04:49,743 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/170521216/
+2026-05-10 17:04:51,010 | INFO | Result: Full Document -> success
+2026-05-10 17:04:51,011 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1223371/
+2026-05-10 17:04:51,585 | INFO | Result: Section 27 in The Limitation Act, 1963 -> success
+2026-05-10 17:04:51,586 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1153878/
+2026-05-10 17:04:51,983 | INFO | Result: Section 3 in The Competition Act, 2002 -> success
+2026-05-10 17:04:51,983 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1113485/
+2026-05-10 17:04:52,905 | INFO | Result: Entire Act -> success
+2026-05-10 17:04:52,905 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1172174/
+2026-05-10 17:04:53,342 | INFO | Result: Full Document -> success
+2026-05-10 17:04:53,343 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/99622088/
+2026-05-10 17:04:53,879 | INFO | Result: Full Document -> success
+2026-05-10 17:04:53,880 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1151186/
+2026-05-10 17:04:54,314 | INFO | Result: Full Document -> success
+2026-05-10 17:04:54,315 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/29295224/
+2026-05-10 17:04:54,852 | INFO | Result: Full Document -> success
+2026-05-10 17:04:54,853 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/109322779/
+2026-05-10 17:04:55,267 | INFO | Result: Full Document -> success
+2026-05-10 17:04:55,268 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/547266/
+2026-05-10 17:04:55,771 | INFO | Result: Full Document -> success
+2026-05-10 17:04:55,772 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1853142/
+2026-05-10 17:04:56,413 | INFO | Result: Full Document -> success
+2026-05-10 17:04:56,414 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/117655670/
+2026-05-10 17:04:56,882 | INFO | Result: Section 2 in ﻿The Commercial Courts, Commercial Division And Commercial Appellate Division Of High Courts Act, 2015 -> success
+2026-05-10 17:04:56,882 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/34300021/
+2026-05-10 17:04:57,364 | INFO | Result: Entire Act -> success
+2026-05-10 17:04:57,365 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/569629/
+2026-05-10 17:04:57,784 | INFO | Result: Section 88 in Bihar Reorganisation Act, 2000 -> success
+2026-05-10 17:04:57,785 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1054471/
+2026-05-10 17:04:58,430 | INFO | Result: Entire Act -> success
+2026-05-10 17:04:58,431 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/94477507/
+2026-05-10 17:04:58,860 | INFO | Result: Section 5 in The Hindu Women's Rights To Property Act, 1937 -> success
+2026-05-10 17:04:58,861 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/80896406/
+2026-05-10 17:04:59,238 | INFO | Result: Entire Act -> success
+2026-05-10 17:04:59,238 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/119689183/
+2026-05-10 17:04:59,779 | INFO | Result: Full Document -> success
+2026-05-10 17:04:59,780 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/598874/
+2026-05-10 17:05:00,201 | INFO | Result: Full Document -> success
+2026-05-10 17:05:00,201 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/199952089/
+2026-05-10 17:05:00,691 | INFO | Result: Full Document -> success
+2026-05-10 17:05:00,692 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1026163/
+2026-05-10 17:05:01,091 | INFO | Result: Full Document -> success
+2026-05-10 17:05:01,091 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1549108/
+2026-05-10 17:05:01,548 | INFO | Result: Full Document -> success
+2026-05-10 17:05:01,549 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1832909/
+2026-05-10 17:05:02,014 | INFO | Result: Full Document -> success
+2026-05-10 17:05:02,015 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/772855/
+2026-05-10 17:05:02,440 | INFO | Result: Full Document -> success
+2026-05-10 17:05:02,441 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/392129/
+2026-05-10 17:05:02,897 | INFO | Result: Full Document -> success
+2026-05-10 17:05:02,899 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1105235/
+2026-05-10 17:05:03,393 | INFO | Result: Full Document -> success
+2026-05-10 17:05:03,394 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/105961750/
+2026-05-10 17:05:03,865 | INFO | Result: Full Document -> success
+2026-05-10 17:05:03,866 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/167005194/
+2026-05-10 17:05:04,357 | INFO | Result: Full Document -> success
+2026-05-10 17:05:04,357 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/52028/
+2026-05-10 17:05:04,814 | INFO | Result: Full Document -> success
+2026-05-10 17:05:04,815 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/144094123/
+2026-05-10 17:05:05,202 | INFO | Result: Full Document -> success
+2026-05-10 17:05:05,203 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/22584916/
+2026-05-10 17:05:05,619 | INFO | Result: Full Document -> success
+2026-05-10 17:05:05,620 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/162636106/
+2026-05-10 17:05:06,103 | INFO | Result: Full Document -> success
+2026-05-10 17:05:06,104 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/145802579/
+2026-05-10 17:05:06,539 | INFO | Result: Full Document -> success
+2026-05-10 17:05:06,540 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/170891220/
+2026-05-10 17:05:06,953 | INFO | Result: Full Document -> success
+2026-05-10 17:05:06,953 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/199960465/
+2026-05-10 17:05:07,432 | INFO | Result: Full Document -> success
+2026-05-10 17:05:07,433 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/77046585/
+2026-05-10 17:05:07,853 | INFO | Result: Full Document -> success
+2026-05-10 17:05:07,854 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/185464130/
+2026-05-10 17:05:08,322 | INFO | Result: Full Document -> success
+2026-05-10 17:05:08,323 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/80042/
+2026-05-10 17:05:08,695 | INFO | Result: Section 106 in The Transfer Of Property Act , 1882 -> success
+2026-05-10 17:05:08,696 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/221518/
+2026-05-10 17:05:09,061 | INFO | Result: Section 53A in The Transfer Of Property Act , 1882 -> success
+2026-05-10 17:05:09,062 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/613871/
+2026-05-10 17:05:09,464 | INFO | Result: Section 54 in The Transfer Of Property Act , 1882 -> success
+2026-05-10 17:05:09,464 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1634925/
+2026-05-10 17:05:09,879 | INFO | Result: Section 52 in The Transfer Of Property Act , 1882 -> success
+2026-05-10 17:05:09,879 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1768154/
+2026-05-10 17:05:10,236 | INFO | Result: Section 49 in The Registration Act , 1908 -> success
+2026-05-10 17:05:10,237 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1489134/
+2026-05-10 17:05:11,145 | INFO | Result: Entire Act -> success
+2026-05-10 17:05:11,146 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/3482533/
+2026-05-10 17:05:11,681 | INFO | Result: Transfer of Property Act , 1977 -> success
+2026-05-10 17:05:11,681 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1345438/
+2026-05-10 17:05:12,414 | INFO | Result: Section 3 in The Transfer Of Property Act , 1882 -> success
+2026-05-10 17:05:12,414 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1693670/
+2026-05-10 17:05:12,770 | INFO | Result: Section 53 in The Transfer Of Property Act , 1882 -> success
+2026-05-10 17:05:12,771 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/584197/
+2026-05-10 17:05:13,150 | INFO | Result: Section 41 in The Transfer Of Property Act , 1882 -> success
+2026-05-10 17:05:13,150 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/149328/
+2026-05-10 17:05:13,536 | INFO | Result: Section 85 in The Transfer Of Property Act , 1882 -> success
+2026-05-10 17:05:13,537 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/324708/
+2026-05-10 17:05:13,906 | INFO | Result: Section 32 in The Transfer Of Property Act , 1882 -> success
+2026-05-10 17:05:13,907 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/24975403/
+2026-05-10 17:05:14,291 | INFO | Result: Section 90 in The Transfer Of Property Act , 1882 -> success
+2026-05-10 17:05:14,292 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/907595/
+2026-05-10 17:05:14,672 | INFO | Result: Section 2 in The Government Grants Act , 1895 -> success
+2026-05-10 17:05:14,673 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1625086/
+2026-05-10 17:05:15,089 | INFO | Result: Entire Act -> success
+2026-05-10 17:05:15,090 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/72595235/
+2026-05-10 17:05:15,612 | INFO | Result: Full Document -> success
+2026-05-10 17:05:15,613 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/870157/
+2026-05-10 17:05:16,043 | INFO | Result: Full Document -> success
+2026-05-10 17:05:16,044 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1296130/
+2026-05-10 17:05:16,870 | INFO | Result: Full Document -> success
+2026-05-10 17:05:16,871 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/187154176/
+2026-05-10 17:05:17,377 | INFO | Result: Full Document -> success
+2026-05-10 17:05:17,378 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1064891/
+2026-05-10 17:05:17,829 | INFO | Result: Full Document -> success
+2026-05-10 17:05:17,830 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1269771/
+2026-05-10 17:05:18,628 | INFO | Result: Full Document -> success
+2026-05-10 17:05:18,628 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1601260/
+2026-05-10 17:05:19,109 | INFO | Result: Section 124 in The Transfer Of Property Act , 1882 -> success
+2026-05-10 17:05:19,110 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1906948/
+2026-05-10 17:05:19,512 | INFO | Result: Section 133 in The Transfer Of Property Act , 1882 -> success
+2026-05-10 17:05:19,513 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1243615/
+2026-05-10 17:05:19,998 | INFO | Result: Full Document -> success
+2026-05-10 17:05:19,999 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1577485/
+2026-05-10 17:05:20,835 | INFO | Result: Full Document -> success
+2026-05-10 17:05:20,836 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/313181/
+2026-05-10 17:05:21,567 | INFO | Result: Full Document -> success
+2026-05-10 17:05:21,568 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/838599/
+2026-05-10 17:05:22,225 | INFO | Result: Full Document -> success
+2026-05-10 17:05:22,226 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/51153749/
+2026-05-10 17:05:22,706 | INFO | Result: Full Document -> success
+2026-05-10 17:05:22,706 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/511962/
+2026-05-10 17:05:23,434 | INFO | Result: Full Document -> success
+2026-05-10 17:05:23,434 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/198934/
+2026-05-10 17:05:24,138 | INFO | Result: Full Document -> success
+2026-05-10 17:05:24,139 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/874420/
+2026-05-10 17:05:24,918 | INFO | Result: Full Document -> success
+2026-05-10 17:05:24,919 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/759043/
+2026-05-10 17:05:25,642 | INFO | Result: Full Document -> success
+2026-05-10 17:05:25,643 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/18042/
+2026-05-10 17:05:26,372 | INFO | Result: Full Document -> success
+2026-05-10 17:05:26,373 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1473261/
+2026-05-10 17:05:27,116 | INFO | Result: Full Document -> success
+2026-05-10 17:05:27,117 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/91595011/
+2026-05-10 17:05:27,806 | INFO | Result: Full Document -> success
+2026-05-10 17:05:27,807 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/98169561/
+2026-05-10 17:05:28,531 | INFO | Result: Full Document -> success
+2026-05-10 17:05:28,532 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/363815/
+2026-05-10 17:05:29,333 | INFO | Result: Full Document -> success
+2026-05-10 17:05:29,334 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1699784/
+2026-05-10 17:05:30,236 | INFO | Result: Full Document -> success
+2026-05-10 17:05:30,236 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/975992/
+2026-05-10 17:05:30,703 | INFO | Result: Full Document -> success
+2026-05-10 17:05:30,703 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/88482064/
+2026-05-10 17:05:31,270 | INFO | Result: Full Document -> success
+2026-05-10 17:05:31,270 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/59657876/
+2026-05-10 17:05:32,044 | INFO | Result: Full Document -> success
+2026-05-10 17:05:32,045 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1543285/
+2026-05-10 17:05:32,936 | INFO | Result: Full Document -> success
+2026-05-10 17:05:32,937 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/87985652/
+2026-05-10 17:05:33,849 | INFO | Result: Full Document -> success
+2026-05-10 17:05:33,849 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1693310/
+2026-05-10 17:05:34,500 | INFO | Result: Full Document -> success
+2026-05-10 17:05:34,501 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1828002/
+2026-05-10 17:05:35,275 | INFO | Result: Full Document -> success
+2026-05-10 17:05:35,276 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1158507/
+2026-05-10 17:05:36,074 | INFO | Result: Full Document -> success
+2026-05-10 17:05:36,075 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1144731/
+2026-05-10 17:05:37,033 | INFO | Result: Full Document -> success
+2026-05-10 17:05:37,034 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/526339/
+2026-05-10 17:05:37,731 | INFO | Result: Full Document -> success
+2026-05-10 17:05:37,732 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/133044387/
+2026-05-10 17:05:38,376 | INFO | Result: Full Document -> success
+2026-05-10 17:05:38,376 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1789611/
+2026-05-10 17:05:39,061 | INFO | Result: Full Document -> success
+2026-05-10 17:05:39,062 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/79945213/
+2026-05-10 17:05:39,866 | INFO | Result: Full Document -> success
+2026-05-10 17:05:39,867 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1582713/
+2026-05-10 17:05:40,506 | INFO | Result: Full Document -> success
+2026-05-10 17:05:40,506 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1863270/
+2026-05-10 17:05:41,268 | INFO | Result: Full Document -> success
+2026-05-10 17:05:41,268 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1577160/
+2026-05-10 17:05:42,100 | INFO | Result: Full Document -> success
+2026-05-10 17:05:42,100 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1728726/
+2026-05-10 17:05:42,964 | INFO | Result: Full Document -> success
+2026-05-10 17:05:42,965 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1692328/
+2026-05-10 17:05:43,519 | INFO | Result: Full Document -> success
+2026-05-10 17:05:43,520 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/170098957/
+2026-05-10 17:05:44,109 | INFO | Result: Full Document -> success
+2026-05-10 17:05:44,110 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/194561470/
+2026-05-10 17:05:44,691 | INFO | Result: Full Document -> success
+2026-05-10 17:05:44,691 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/529047/
+2026-05-10 17:05:45,320 | INFO | Result: Full Document -> success
+2026-05-10 17:05:45,321 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1159099/
+2026-05-10 17:05:46,153 | INFO | Result: Full Document -> success
+2026-05-10 17:05:46,154 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1711998/
+2026-05-10 17:05:47,035 | INFO | Result: Full Document -> success
+2026-05-10 17:05:47,035 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/32811487/
+2026-05-10 17:05:47,688 | INFO | Result: Full Document -> success
+2026-05-10 17:05:47,689 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/46863673/
+2026-05-10 17:05:48,745 | INFO | Result: Full Document -> success
+2026-05-10 17:05:48,750 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1076997/
+2026-05-10 17:05:49,664 | INFO | Result: Full Document -> success
+2026-05-10 17:05:49,665 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/849616/
+2026-05-10 17:05:50,515 | INFO | Result: Full Document -> success
+2026-05-10 17:05:50,516 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/213340/
+2026-05-10 17:05:51,445 | INFO | Result: Full Document -> success
+2026-05-10 17:05:51,446 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/164038868/
+2026-05-10 17:05:52,621 | INFO | Result: Full Document -> success
+2026-05-10 17:05:52,622 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/288997/
+2026-05-10 17:05:53,731 | INFO | Result: Full Document -> success
+2026-05-10 17:05:53,732 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/133190430/
+2026-05-10 17:05:54,541 | INFO | Result: Full Document -> success
+2026-05-10 17:05:54,544 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/124606142/
+2026-05-10 17:05:55,312 | INFO | Result: Full Document -> success
+2026-05-10 17:05:55,313 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/251353/
+2026-05-10 17:05:56,021 | INFO | Result: Full Document -> success
+2026-05-10 17:05:56,023 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/139118497/
+2026-05-10 17:05:57,065 | INFO | Result: Full Document -> success
+2026-05-10 17:05:57,066 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/130835646/
+2026-05-10 17:05:57,986 | INFO | Result: Full Document -> success
+2026-05-10 17:05:57,987 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/69542729/
+2026-05-10 17:05:58,844 | INFO | Result: Full Document -> success
+2026-05-10 17:05:58,846 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/54544239/
+2026-05-10 17:05:59,655 | INFO | Result: Full Document -> success
+2026-05-10 17:05:59,656 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/96085858/
+2026-05-10 17:06:00,810 | INFO | Result: Full Document -> success
+2026-05-10 17:06:00,811 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/21713401/
+2026-05-10 17:06:01,729 | INFO | Result: Full Document -> success
+2026-05-10 17:06:01,731 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/104763396/
+2026-05-10 17:06:02,980 | INFO | Result: Full Document -> success
+2026-05-10 17:06:02,981 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/51906627/
+2026-05-10 17:06:03,930 | INFO | Result: Full Document -> success
+2026-05-10 17:06:03,932 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/28740054/
+2026-05-10 17:06:04,970 | INFO | Result: Full Document -> success
+2026-05-10 17:06:04,970 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/82084445/
+2026-05-10 17:06:05,822 | INFO | Result: Full Document -> success
+2026-05-10 17:06:05,823 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/37313227/
+2026-05-10 17:06:06,637 | INFO | Result: Full Document -> success
+2026-05-10 17:06:06,638 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/98853113/
+2026-05-10 17:06:08,003 | INFO | Result: Full Document -> success
+2026-05-10 17:06:08,005 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1120139/
+2026-05-10 17:06:08,922 | INFO | Result: Full Document -> success
+2026-05-10 17:06:08,922 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/803172/
+2026-05-10 17:06:09,856 | INFO | Result: Full Document -> success
+2026-05-10 17:06:09,858 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1480466/
+2026-05-10 17:06:10,897 | INFO | Result: Full Document -> success
+2026-05-10 17:06:10,902 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1824281/
+2026-05-10 17:06:11,648 | INFO | Result: Full Document -> success
+2026-05-10 17:06:11,651 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/397599/
+2026-05-10 17:06:12,374 | INFO | Result: Full Document -> success
+2026-05-10 17:06:12,377 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/107503577/
+2026-05-10 17:06:13,136 | INFO | Result: Full Document -> success
+2026-05-10 17:06:13,138 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/225447/
+2026-05-10 17:06:14,072 | INFO | Result: Full Document -> success
+2026-05-10 17:06:14,074 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/680600/
+2026-05-10 17:06:14,717 | INFO | Result: Full Document -> success
+2026-05-10 17:06:14,719 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/72126677/
+2026-05-10 17:06:15,730 | INFO | Result: Full Document -> success

@@ -1,5 +1,141 @@
 domain,category,title,url,source,expected_type,tags
-cybersecurity,act,Information Technology Act 2000,https://www.indiacode.nic.in/handle/123456789/1999,indiacode,auto,"cybercrime;cybersecurity;it act"
-cybersecurity,policy,CERT-In Directions 2022,https://www.cert-in.org.in,cert-in,html,"incident reporting;security operations"
-property_rights,act,Transfer of Property Act 1882,https://www.indiacode.nic.in/handle/123456789/2325,indiacode,auto,"property;transfer"
-property_rights,act,Registration Act 1908,https://www.indiacode.nic.in/handle/123456789/2263,indiacode,auto,"property;registration"
+property_rights,case_law,Article 31 in Constitution of India,https://indiankanoon.org/doc/354224/,indiankanoon,html,property;legal
+property_rights,case_law,Constitution,https://indiankanoon.org/doc/237570/,indiankanoon,html,property;legal
+property_rights,case_law,"Section 9 in The Income Tax Act, 1961",https://indiankanoon.org/doc/1369261/,indiankanoon,html,property;legal
+property_rights,case_law,Entire Act,https://indiankanoon.org/doc/789969/,indiankanoon,html,property;legal
+property_rights,case_law,"Section 394 in The Companies Act, 1956",https://indiankanoon.org/doc/301194/,indiankanoon,html,property;legal
+property_rights,case_law,Entire Act,https://indiankanoon.org/doc/1353758/,indiankanoon,html,property;legal
+property_rights,case_law,"Section 18 in The Limitation Act, 1963",https://indiankanoon.org/doc/85586/,indiankanoon,html,property;legal
+property_rights,case_law,Entire Act,https://indiankanoon.org/doc/1317393/,indiankanoon,html,property;legal
+property_rights,case_law,"Section 17 in The Income Tax Act, 1961",https://indiankanoon.org/doc/938899/,indiankanoon,html,property;legal
+property_rights,case_law,"Section 108 in The Transfer Of Property Act, 1882",https://indiankanoon.org/doc/1879190/,indiankanoon,html,property;legal
+property_rights,case_law,Entire Act,https://indiankanoon.org/doc/515323/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/170521216/,indiankanoon,html,property;legal
+property_rights,case_law,"Section 27 in The Limitation Act, 1963",https://indiankanoon.org/doc/1223371/,indiankanoon,html,property;legal
+property_rights,case_law,"Section 3 in The Competition Act, 2002",https://indiankanoon.org/doc/1153878/,indiankanoon,html,property;legal
+property_rights,case_law,Entire Act,https://indiankanoon.org/doc/1113485/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/1172174/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/99622088/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/1151186/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/29295224/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/109322779/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/547266/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/1853142/,indiankanoon,html,property;legal
+property_rights,case_law,"Section 2 in ﻿The Commercial Courts, Commercial Division And Commercial Appellate Division Of High Courts Act, 2015",https://indiankanoon.org/doc/117655670/,indiankanoon,html,property;legal
+property_rights,case_law,Entire Act,https://indiankanoon.org/doc/34300021/,indiankanoon,html,property;legal
+property_rights,case_law,"Section 88 in Bihar Reorganisation Act, 2000",https://indiankanoon.org/doc/569629/,indiankanoon,html,property;legal
+property_rights,case_law,Entire Act,https://indiankanoon.org/doc/1054471/,indiankanoon,html,property;legal
+property_rights,case_law,"Section 5 in The Hindu Women's Rights To Property Act, 1937",https://indiankanoon.org/doc/94477507/,indiankanoon,html,property;legal
+property_rights,case_law,Entire Act,https://indiankanoon.org/doc/80896406/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/119689183/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/598874/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/199952089/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/1026163/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/1549108/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/1832909/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/772855/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/392129/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/1105235/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/105961750/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/167005194/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/52028/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/144094123/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/22584916/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/162636106/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/145802579/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/170891220/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/199960465/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/77046585/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/185464130/,indiankanoon,html,property;legal
+property_rights,case_law,"Section 106 in The Transfer Of Property Act , 1882",https://indiankanoon.org/doc/80042/,indiankanoon,html,property;legal
+property_rights,case_law,"Section 53A in The Transfer Of Property Act , 1882",https://indiankanoon.org/doc/221518/,indiankanoon,html,property;legal
+property_rights,case_law,"Section 54 in The Transfer Of Property Act , 1882",https://indiankanoon.org/doc/613871/,indiankanoon,html,property;legal
+property_rights,case_law,"Section 52 in The Transfer Of Property Act , 1882",https://indiankanoon.org/doc/1634925/,indiankanoon,html,property;legal
+property_rights,case_law,"Section 49 in The Registration Act , 1908",https://indiankanoon.org/doc/1768154/,indiankanoon,html,property;legal
+property_rights,case_law,Entire Act,https://indiankanoon.org/doc/1489134/,indiankanoon,html,property;legal
+property_rights,case_law,"Transfer of Property Act , 1977",https://indiankanoon.org/doc/3482533/,indiankanoon,html,property;legal
+property_rights,case_law,"Section 3 in The Transfer Of Property Act , 1882",https://indiankanoon.org/doc/1345438/,indiankanoon,html,property;legal
+property_rights,case_law,"Section 53 in The Transfer Of Property Act , 1882",https://indiankanoon.org/doc/1693670/,indiankanoon,html,property;legal
+property_rights,case_law,"Section 41 in The Transfer Of Property Act , 1882",https://indiankanoon.org/doc/584197/,indiankanoon,html,property;legal
+property_rights,case_law,"Section 85 in The Transfer Of Property Act , 1882",https://indiankanoon.org/doc/149328/,indiankanoon,html,property;legal
+property_rights,case_law,"Section 32 in The Transfer Of Property Act , 1882",https://indiankanoon.org/doc/324708/,indiankanoon,html,property;legal
+property_rights,case_law,"Section 90 in The Transfer Of Property Act , 1882",https://indiankanoon.org/doc/24975403/,indiankanoon,html,property;legal
+property_rights,case_law,"Section 2 in The Government Grants Act , 1895",https://indiankanoon.org/doc/907595/,indiankanoon,html,property;legal
+property_rights,case_law,Entire Act,https://indiankanoon.org/doc/1625086/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/72595235/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/870157/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/1296130/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/187154176/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/1064891/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/1269771/,indiankanoon,html,property;legal
+property_rights,case_law,"Section 124 in The Transfer Of Property Act , 1882",https://indiankanoon.org/doc/1601260/,indiankanoon,html,property;legal
+property_rights,case_law,"Section 133 in The Transfer Of Property Act , 1882",https://indiankanoon.org/doc/1906948/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/1243615/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/1577485/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/313181/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/838599/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/51153749/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/511962/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/198934/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/874420/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/759043/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/18042/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/1473261/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/91595011/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/98169561/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/363815/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/1699784/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/975992/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/88482064/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/59657876/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/1543285/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/87985652/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/1693310/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/1828002/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/1158507/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/1144731/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/526339/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/133044387/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/1789611/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/79945213/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/1582713/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/1863270/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/1577160/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/1728726/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/1692328/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/170098957/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/194561470/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/529047/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/1159099/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/1711998/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/32811487/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/46863673/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/1076997/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/849616/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/213340/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/164038868/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/288997/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/133190430/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/124606142/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/251353/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/139118497/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/130835646/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/69542729/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/54544239/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/96085858/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/21713401/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/104763396/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/51906627/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/28740054/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/82084445/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/37313227/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/98853113/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/1120139/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/803172/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/1480466/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/1824281/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/397599/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/107503577/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/225447/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/680600/,indiankanoon,html,property;legal
+property_rights,case_law,Full Document,https://indiankanoon.org/doc/72126677/,indiankanoon,html,property;legal
