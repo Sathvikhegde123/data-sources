@@ -605,3 +605,499 @@
 2026-05-10 17:06:14,717 | INFO | Result: Full Document -> success
 2026-05-10 17:06:14,719 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/72126677/
 2026-05-10 17:06:15,730 | INFO | Result: Full Document -> success
+2026-05-10 17:41:39,043 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/139318141/
+2026-05-10 17:41:40,379 | INFO | Result: Full Document -> success
+2026-05-10 17:41:40,379 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/157003932/
+2026-05-10 17:41:40,865 | INFO | Result: Full Document -> success
+2026-05-10 17:41:40,866 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/136280608/
+2026-05-10 17:41:41,346 | INFO | Result: Full Document -> success
+2026-05-10 17:41:41,347 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/147390199/
+2026-05-10 17:41:42,254 | INFO | Result: Full Document -> success
+2026-05-10 17:41:42,254 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/56699948/
+2026-05-10 17:41:42,856 | INFO | Result: Full Document -> success
+2026-05-10 17:41:42,857 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/68207149/
+2026-05-10 17:41:43,383 | INFO | Result: Full Document -> success
+2026-05-10 17:41:43,384 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/71199828/
+2026-05-10 17:41:43,855 | INFO | Result: Full Document -> success
+2026-05-10 17:41:43,856 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/59897051/
+2026-05-10 17:41:44,299 | INFO | Result: Full Document -> success
+2026-05-10 17:41:44,300 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/101865435/
+2026-05-10 17:41:44,731 | INFO | Result: Full Document -> success
+2026-05-10 17:41:44,732 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/128274054/
+2026-05-10 17:41:45,375 | INFO | Result: Full Document -> success
+2026-05-10 17:41:45,376 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/36272070/
+2026-05-10 17:41:46,364 | INFO | Result: Full Document -> success
+2026-05-10 17:41:46,365 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/173972362/
+2026-05-10 17:41:46,861 | INFO | Result: Full Document -> success
+2026-05-10 17:41:46,862 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/114497915/
+2026-05-10 17:41:47,351 | INFO | Result: Full Document -> success
+2026-05-10 17:41:47,352 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/187064597/
+2026-05-10 17:41:48,079 | INFO | Result: Full Document -> success
+2026-05-10 17:41:48,080 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/98223685/
+2026-05-10 17:41:48,753 | INFO | Result: Full Document -> success
+2026-05-10 17:41:48,754 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/168068781/
+2026-05-10 17:41:49,215 | INFO | Result: Full Document -> success
+2026-05-10 17:41:49,216 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/132743320/
+2026-05-10 17:41:49,604 | INFO | Result: Full Document -> success
+2026-05-10 17:41:49,605 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/113775404/
+2026-05-10 17:41:50,059 | INFO | Result: Full Document -> success
+2026-05-10 17:41:50,060 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/80271632/
+2026-05-10 17:41:50,460 | INFO | Result: Full Document -> success
+2026-05-10 17:41:50,461 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/113138773/
+2026-05-10 17:41:50,922 | INFO | Result: Full Document -> success
+2026-05-10 17:41:50,923 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/172915181/
+2026-05-10 17:41:51,405 | INFO | Result: Full Document -> success
+2026-05-10 17:41:51,406 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/135883640/
+2026-05-10 17:41:51,886 | INFO | Result: Full Document -> success
+2026-05-10 17:41:51,887 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/43741476/
+2026-05-10 17:41:52,364 | INFO | Result: Full Document -> success
+2026-05-10 17:41:52,365 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/179410258/
+2026-05-10 17:41:52,796 | INFO | Result: Full Document -> success
+2026-05-10 17:41:52,797 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/51287776/
+2026-05-10 17:41:53,238 | INFO | Result: Full Document -> success
+2026-05-10 17:41:53,239 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/174276637/
+2026-05-10 17:41:53,679 | INFO | Result: Full Document -> success
+2026-05-10 17:41:53,680 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/71479511/
+2026-05-10 17:41:54,138 | INFO | Result: Full Document -> success
+2026-05-10 17:41:54,140 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/42573768/
+2026-05-10 17:41:54,590 | INFO | Result: Full Document -> success
+2026-05-10 17:41:54,591 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/97881509/
+2026-05-10 17:41:55,127 | INFO | Result: Full Document -> success
+2026-05-10 17:41:55,128 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/17071886/
+2026-05-10 17:41:55,565 | INFO | Result: Full Document -> success
+2026-05-10 17:41:55,566 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/2710325/
+2026-05-10 17:41:56,006 | INFO | Result: Full Document -> success
+2026-05-10 17:41:56,007 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/42228674/
+2026-05-10 17:41:56,433 | INFO | Result: Full Document -> success
+2026-05-10 17:41:56,434 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/87916970/
+2026-05-10 17:41:56,882 | INFO | Result: Full Document -> success
+2026-05-10 17:41:56,883 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/50068052/
+2026-05-10 17:41:57,300 | INFO | Result: Full Document -> success
+2026-05-10 17:41:57,301 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/174204263/
+2026-05-10 17:41:57,821 | INFO | Result: Full Document -> success
+2026-05-10 17:41:57,822 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/172759716/
+2026-05-10 17:41:58,294 | INFO | Result: Full Document -> success
+2026-05-10 17:41:58,295 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/137485518/
+2026-05-10 17:41:58,759 | INFO | Result: Full Document -> success
+2026-05-10 17:41:58,761 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/94188064/
+2026-05-10 17:41:59,358 | INFO | Result: Full Document -> success
+2026-05-10 17:41:59,359 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/60394627/
+2026-05-10 17:41:59,788 | INFO | Result: Full Document -> success
+2026-05-10 17:41:59,790 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/154957176/
+2026-05-10 17:42:00,635 | INFO | Result: Full Document -> success
+2026-05-10 17:42:00,636 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/1127741/
+2026-05-10 17:42:01,016 | INFO | Result: Section 4 in The Indian Penal Code, 1860 -> success
+2026-05-10 17:42:01,016 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/1569253/
+2026-05-10 17:42:02,161 | INFO | Result: Entire Act -> success
+2026-05-10 17:42:02,162 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/545792/
+2026-05-10 17:42:02,721 | INFO | Result: Section 2 in The Income Tax Act , 1961 -> success
+2026-05-10 17:42:02,722 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/789969/
+2026-05-10 17:42:10,548 | INFO | Result: Entire Act -> success
+2026-05-10 17:42:10,550 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/1277726/
+2026-05-10 17:42:11,061 | INFO | Result: Section 132 in The Income Tax Act , 1961 -> success
+2026-05-10 17:42:11,062 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/1318767/
+2026-05-10 17:42:11,613 | INFO | Result: Section 67 in The Information Technology Act , 2000 -> success
+2026-05-10 17:42:11,614 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/1965344/
+2026-05-10 17:42:12,319 | INFO | Result: Entire Act -> success
+2026-05-10 17:42:12,320 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/326206/
+2026-05-10 17:42:12,870 | INFO | Result: Section 66 in The Information Technology Act , 2000 -> success
+2026-05-10 17:42:12,871 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/1745798/
+2026-05-10 17:42:13,534 | INFO | Result: Section 464 in The Indian Penal Code, 1860 -> success
+2026-05-10 17:42:13,536 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/1031309/
+2026-05-10 17:42:14,255 | INFO | Result: Section 3 in The Indian Evidence Act , 1872 -> success
+2026-05-10 17:42:14,257 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/1953529/
+2026-05-10 17:42:16,084 | INFO | Result: Entire Act -> success
+2026-05-10 17:42:16,087 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/1025384/
+2026-05-10 17:42:17,000 | INFO | Result: Section 45 in The Indian Evidence Act , 1872 -> success
+2026-05-10 17:42:17,001 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/1053937/
+2026-05-10 17:42:17,865 | INFO | Result: Section 466 in The Indian Penal Code, 1860 -> success
+2026-05-10 17:42:17,867 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/770022/
+2026-05-10 17:42:18,429 | INFO | Result: Section 73 in The Indian Evidence Act , 1872 -> success
+2026-05-10 17:42:18,430 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/1477060/
+2026-05-10 17:42:19,162 | INFO | Result: Section 51 in The Information Technology Act , 2000 -> success
+2026-05-10 17:42:19,163 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/150327236/
+2026-05-10 17:42:20,111 | INFO | Result: Section 46 in The Unlawful Activities (Prevention) Act , 1967 -> success
+2026-05-10 17:42:20,112 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/1389751/
+2026-05-10 17:42:21,387 | INFO | Result: Entire Act -> success
+2026-05-10 17:42:21,390 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/1962230/
+2026-05-10 17:42:22,115 | INFO | Result: Section 64 in The Information Technology Act , 2000 -> success
+2026-05-10 17:42:22,116 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/1865820/
+2026-05-10 17:42:22,785 | INFO | Result: Section 55 in The Information Technology Act , 2000 -> success
+2026-05-10 17:42:22,787 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/1040076/
+2026-05-10 17:42:23,772 | INFO | Result: Section 24 in The Information Technology Act , 2000 -> success
+2026-05-10 17:42:23,773 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/1514290/
+2026-05-10 17:42:24,490 | INFO | Result: Section 23 in The Information Technology Act , 2000 -> success
+2026-05-10 17:42:24,491 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/1735825/
+2026-05-10 17:42:25,293 | INFO | Result: Section 91 in The Information Technology Act , 2000 -> success
+2026-05-10 17:42:25,294 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/1774397/
+2026-05-10 17:42:25,985 | INFO | Result: Section 61 in The Information Technology Act , 2000 -> success
+2026-05-10 17:42:25,986 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/993519/
+2026-05-10 17:42:26,861 | INFO | Result: Section 33 in The Information Technology Act , 2000 -> success
+2026-05-10 17:42:26,862 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/940650/
+2026-05-10 17:42:27,702 | INFO | Result: Section 16 in The Information Technology Act , 2000 -> success
+2026-05-10 17:42:27,703 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/70981105/
+2026-05-10 17:42:28,602 | INFO | Result: Full Document -> success
+2026-05-10 17:42:28,603 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/52491729/
+2026-05-10 17:42:29,541 | INFO | Result: Full Document -> success
+2026-05-10 17:42:29,542 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/196894795/
+2026-05-10 17:42:30,311 | INFO | Result: Full Document -> success
+2026-05-10 17:42:30,312 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/116355009/
+2026-05-10 17:42:31,598 | INFO | Result: Full Document -> success
+2026-05-10 17:42:31,599 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/192504406/
+2026-05-10 17:42:32,645 | INFO | Result: Full Document -> success
+2026-05-10 17:42:32,647 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/16601408/
+2026-05-10 17:42:33,470 | INFO | Result: Full Document -> success
+2026-05-10 17:42:33,471 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/90005566/
+2026-05-10 17:42:34,301 | INFO | Result: Full Document -> success
+2026-05-10 17:42:34,302 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/119536729/
+2026-05-10 17:42:35,324 | INFO | Result: Full Document -> success
+2026-05-10 17:42:35,325 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/29240036/
+2026-05-10 17:42:36,393 | INFO | Result: Full Document -> success
+2026-05-10 17:42:36,395 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/56426617/
+2026-05-10 17:42:37,413 | INFO | Result: Full Document -> success
+2026-05-10 17:42:37,415 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/656947/
+2026-05-10 17:42:38,191 | INFO | Result: Section 2 in The Bihar Value Added Tax Act , 2005 -> success
+2026-05-10 17:42:38,192 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/1939811/
+2026-05-10 17:42:39,782 | INFO | Result: Entire Act -> success
+2026-05-10 17:42:39,783 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/105489341/
+2026-05-10 17:42:40,550 | INFO | Result: Full Document -> success
+2026-05-10 17:42:40,551 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/51782092/
+2026-05-10 17:42:42,292 | INFO | Result: Full Document -> success
+2026-05-10 17:42:42,293 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/144700479/
+2026-05-10 17:42:43,534 | INFO | Result: Full Document -> success
+2026-05-10 17:42:43,534 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/140793254/
+2026-05-10 17:42:44,298 | INFO | Result: Full Document -> success
+2026-05-10 17:42:44,298 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/3126265/
+2026-05-10 17:42:44,912 | INFO | Result: Full Document -> success
+2026-05-10 17:42:44,913 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/187234253/
+2026-05-10 17:42:45,804 | INFO | Result: Full Document -> success
+2026-05-10 17:42:45,805 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/155770285/
+2026-05-10 17:42:46,598 | INFO | Result: Full Document -> success
+2026-05-10 17:42:46,599 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/10913299/
+2026-05-10 17:42:47,152 | INFO | Result: Full Document -> success
+2026-05-10 17:42:47,153 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/98023179/
+2026-05-10 17:42:48,402 | INFO | Result: Full Document -> success
+2026-05-10 17:42:48,403 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/91314056/
+2026-05-10 17:42:49,256 | INFO | Result: Full Document -> success
+2026-05-10 17:42:49,257 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/478468/
+2026-05-10 17:42:49,968 | INFO | Result: Full Document -> success
+2026-05-10 17:42:49,968 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/15440119/
+2026-05-10 17:42:50,541 | INFO | Result: Full Document -> success
+2026-05-10 17:42:50,542 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/39800/
+2026-05-10 17:42:51,318 | INFO | Result: Section 43 in The Information Technology Act , 2000 -> success
+2026-05-10 17:42:51,319 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/72646466/
+2026-05-10 17:42:52,153 | INFO | Result: Full Document -> success
+2026-05-10 17:42:52,154 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/147324005/
+2026-05-10 17:42:52,705 | INFO | Result: Full Document -> success
+2026-05-10 17:42:52,706 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/123849383/
+2026-05-10 17:42:53,249 | INFO | Result: Full Document -> success
+2026-05-10 17:42:53,250 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/94022339/
+2026-05-10 17:42:53,762 | INFO | Result: Full Document -> success
+2026-05-10 17:42:53,763 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/23049476/
+2026-05-10 17:42:54,594 | INFO | Result: Full Document -> success
+2026-05-10 17:42:54,595 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/42712175/
+2026-05-10 17:42:55,212 | INFO | Result: Full Document -> success
+2026-05-10 17:42:55,213 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/105881097/
+2026-05-10 17:42:55,995 | INFO | Result: Full Document -> success
+2026-05-10 17:42:55,996 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/49414029/
+2026-05-10 17:42:56,665 | INFO | Result: Full Document -> success
+2026-05-10 17:42:56,666 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/136477519/
+2026-05-10 17:42:57,480 | INFO | Result: Full Document -> success
+2026-05-10 17:42:57,481 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/77044284/
+2026-05-10 17:42:58,218 | INFO | Result: Full Document -> success
+2026-05-10 17:42:58,219 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/171986591/
+2026-05-10 17:42:58,781 | INFO | Result: Full Document -> success
+2026-05-10 17:42:58,782 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/72815254/
+2026-05-10 17:42:59,377 | INFO | Result: Full Document -> success
+2026-05-10 17:42:59,378 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/92009411/
+2026-05-10 17:43:00,083 | INFO | Result: Full Document -> success
+2026-05-10 17:43:00,083 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/186016865/
+2026-05-10 17:43:00,840 | INFO | Result: Full Document -> success
+2026-05-10 17:43:00,841 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/177237839/
+2026-05-10 17:43:01,581 | INFO | Result: Full Document -> success
+2026-05-10 17:43:01,582 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/1997940/
+2026-05-10 17:43:02,739 | INFO | Result: Full Document -> success
+2026-05-10 17:43:02,740 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/161654059/
+2026-05-10 17:43:03,619 | INFO | Result: Full Document -> success
+2026-05-10 17:43:03,619 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/173897744/
+2026-05-10 17:43:04,601 | INFO | Result: Full Document -> success
+2026-05-10 17:43:04,602 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/8075629/
+2026-05-10 17:43:05,113 | INFO | Result: Full Document -> success
+2026-05-10 17:43:05,114 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/13583100/
+2026-05-10 17:43:06,012 | INFO | Result: Full Document -> success
+2026-05-10 17:43:06,013 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/11008061/
+2026-05-10 17:43:06,475 | INFO | Result: Full Document -> success
+2026-05-10 17:43:06,476 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/114927394/
+2026-05-10 17:43:07,333 | INFO | Result: Full Document -> success
+2026-05-10 17:43:07,334 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/175977239/
+2026-05-10 17:43:08,150 | INFO | Result: Full Document -> success
+2026-05-10 17:43:08,152 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/182773147/
+2026-05-10 17:43:08,875 | INFO | Result: Full Document -> success
+2026-05-10 17:43:08,876 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/1689797/
+2026-05-10 17:43:09,857 | INFO | Result: Full Document -> success
+2026-05-10 17:43:09,859 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/168063795/
+2026-05-10 17:43:10,391 | INFO | Result: Full Document -> success
+2026-05-10 17:43:10,392 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/133859037/
+2026-05-10 17:43:10,993 | INFO | Result: Full Document -> success
+2026-05-10 17:43:10,994 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/179788397/
+2026-05-10 17:43:11,770 | INFO | Result: Full Document -> success
+2026-05-10 17:43:11,772 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/60409774/
+2026-05-10 17:43:12,990 | INFO | Result: Full Document -> success
+2026-05-10 17:43:12,991 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/89335853/
+2026-05-10 17:43:13,734 | INFO | Result: Full Document -> success
+2026-05-10 17:43:13,735 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/140152289/
+2026-05-10 17:43:14,340 | INFO | Result: Full Document -> success
+2026-05-10 17:43:14,341 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/156623649/
+2026-05-10 17:43:15,021 | INFO | Result: Full Document -> success
+2026-05-10 17:43:15,022 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/67427333/
+2026-05-10 17:43:15,732 | INFO | Result: Full Document -> success
+2026-05-10 17:43:15,733 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/119771594/
+2026-05-10 17:43:16,514 | INFO | Result: Full Document -> success
+2026-05-10 17:43:16,515 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/92093399/
+2026-05-10 17:43:17,047 | INFO | Result: Full Document -> success
+2026-05-10 17:43:17,048 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/152889627/
+2026-05-10 17:43:17,672 | INFO | Result: Full Document -> success
+2026-05-10 17:43:17,673 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/185524068/
+2026-05-10 17:43:18,129 | INFO | Result: Full Document -> success
+2026-05-10 17:43:18,130 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/104859936/
+2026-05-10 17:43:18,974 | INFO | Result: Full Document -> success
+2026-05-10 17:43:18,975 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/80878602/
+2026-05-10 17:43:19,839 | INFO | Result: Full Document -> success
+2026-05-10 17:43:19,840 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/88738725/
+2026-05-10 17:43:20,579 | INFO | Result: Full Document -> success
+2026-05-10 17:43:20,580 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/174891197/
+2026-05-10 17:43:21,184 | INFO | Result: Full Document -> success
+2026-05-10 17:43:21,185 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/1901058/
+2026-05-10 17:43:21,963 | INFO | Result: Full Document -> success
+2026-05-10 17:43:21,963 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/53841985/
+2026-05-10 17:43:22,574 | INFO | Result: Full Document -> success
+2026-05-10 17:43:22,575 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/174392444/
+2026-05-10 17:43:23,030 | INFO | Result: Full Document -> success
+2026-05-10 17:43:23,031 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/94053395/
+2026-05-10 17:43:23,765 | INFO | Result: Full Document -> success
+2026-05-10 17:43:23,766 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/99875396/
+2026-05-10 17:43:24,514 | INFO | Result: Full Document -> success
+2026-05-10 17:43:24,515 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/88360982/
+2026-05-10 17:43:24,959 | INFO | Result: Full Document -> success
+2026-05-10 17:43:24,961 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/76965619/
+2026-05-10 17:43:25,550 | INFO | Result: Full Document -> success
+2026-05-10 17:43:25,551 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/63997770/
+2026-05-10 17:43:26,378 | INFO | Result: Full Document -> success
+2026-05-10 17:43:26,379 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/93578593/
+2026-05-10 17:43:27,254 | INFO | Result: Full Document -> success
+2026-05-10 17:43:27,255 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/25299874/
+2026-05-10 17:43:28,017 | INFO | Result: Full Document -> success
+2026-05-10 17:43:28,018 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/156047257/
+2026-05-10 17:43:28,846 | INFO | Result: Full Document -> success
+2026-05-10 17:43:28,846 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/191375057/
+2026-05-10 17:43:29,870 | INFO | Result: Full Document -> success
+2026-05-10 17:43:29,870 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/63084991/
+2026-05-10 17:43:30,845 | INFO | Result: Full Document -> success
+2026-05-10 17:43:30,846 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/10042958/
+2026-05-10 17:43:31,695 | INFO | Result: Full Document -> success
+2026-05-10 17:43:31,696 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/145385598/
+2026-05-10 17:43:32,405 | INFO | Result: Full Document -> success
+2026-05-10 17:43:32,407 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/48345973/
+2026-05-10 17:43:32,803 | INFO | Result: Full Document -> success
+2026-05-10 17:43:32,804 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/125921697/
+2026-05-10 17:43:33,482 | INFO | Result: Full Document -> success
+2026-05-10 17:43:33,484 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/69140917/
+2026-05-10 17:43:34,347 | INFO | Result: Full Document -> success
+2026-05-10 17:43:34,348 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/29097274/
+2026-05-10 17:43:34,934 | INFO | Result: Full Document -> success
+2026-05-10 17:43:34,934 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/84772710/
+2026-05-10 17:43:35,539 | INFO | Result: Full Document -> success
+2026-05-10 17:43:35,540 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/32890712/
+2026-05-10 17:43:36,341 | INFO | Result: Full Document -> success
+2026-05-10 17:43:36,342 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/68413051/
+2026-05-10 17:43:37,155 | INFO | Result: Full Document -> success
+2026-05-10 17:43:37,156 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/187758830/
+2026-05-10 17:43:37,768 | INFO | Result: Full Document -> success
+2026-05-10 17:43:37,769 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/18002127/
+2026-05-10 17:43:38,499 | INFO | Result: Full Document -> success
+2026-05-10 17:43:38,500 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/162211109/
+2026-05-10 17:43:39,174 | INFO | Result: Full Document -> success
+2026-05-10 17:43:39,175 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/31985643/
+2026-05-10 17:43:40,047 | INFO | Result: Full Document -> success
+2026-05-10 17:43:40,048 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/173462846/
+2026-05-10 17:43:40,678 | INFO | Result: Full Document -> success
+2026-05-10 17:43:40,679 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/141233600/
+2026-05-10 17:43:41,512 | INFO | Result: Full Document -> success
+2026-05-10 17:43:41,513 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/42587172/
+2026-05-10 17:43:42,169 | INFO | Result: Full Document -> success
+2026-05-10 17:43:42,170 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/21366357/
+2026-05-10 17:43:42,843 | INFO | Result: Full Document -> success
+2026-05-10 17:43:42,844 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/62956986/
+2026-05-10 17:43:43,571 | INFO | Result: Full Document -> success
+2026-05-10 17:43:43,572 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/118912881/
+2026-05-10 17:43:44,225 | INFO | Result: Section 66C in The Information Technology Act , 2000 -> success
+2026-05-10 17:43:44,226 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/189983249/
+2026-05-10 17:43:45,042 | INFO | Result: Full Document -> success
+2026-05-10 17:43:45,043 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/41057769/
+2026-05-10 17:43:45,931 | INFO | Result: Full Document -> success
+2026-05-10 17:43:45,932 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/118066973/
+2026-05-10 17:43:46,662 | INFO | Result: Full Document -> success
+2026-05-10 17:43:46,663 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/122038159/
+2026-05-10 17:43:47,401 | INFO | Result: Full Document -> success
+2026-05-10 17:43:47,402 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/199937255/
+2026-05-10 17:43:48,231 | INFO | Result: Full Document -> success
+2026-05-10 17:43:48,232 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/173392520/
+2026-05-10 17:43:48,926 | INFO | Result: Full Document -> success
+2026-05-10 17:43:48,927 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/67206162/
+2026-05-10 17:43:49,558 | INFO | Result: Full Document -> success
+2026-05-10 17:43:49,558 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/118696796/
+2026-05-10 17:43:50,357 | INFO | Result: Full Document -> success
+2026-05-10 17:43:50,359 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/125076821/
+2026-05-10 17:43:51,257 | INFO | Result: Full Document -> success
+2026-05-10 17:43:51,258 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/24793122/
+2026-05-10 17:43:51,911 | INFO | Result: Full Document -> success
+2026-05-10 17:43:51,912 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/65481493/
+2026-05-10 17:43:52,722 | INFO | Result: Full Document -> success
+2026-05-10 17:43:52,723 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/15282837/
+2026-05-10 17:43:53,385 | INFO | Result: Full Document -> success
+2026-05-10 17:43:53,386 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/157922480/
+2026-05-10 17:43:54,004 | INFO | Result: Full Document -> success
+2026-05-10 17:43:54,005 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/58848407/
+2026-05-10 17:43:54,687 | INFO | Result: Full Document -> success
+2026-05-10 17:43:54,689 | INFO | Scraping [1/2]: https://indiankanoon.org/doc/108679022/
+2026-05-10 17:43:55,049 | WARNING | Attempt failed for https://indiankanoon.org/doc/108679022/ (('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)))
+2026-05-10 17:45:14,609 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/139318141/
+2026-05-10 17:45:16,250 | INFO | Result: Full Document -> success
+2026-05-10 17:45:16,251 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/157003932/
+2026-05-10 17:45:16,881 | INFO | Result: Full Document -> success
+2026-05-10 17:45:16,883 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/136280608/
+2026-05-10 17:45:17,565 | INFO | Result: Full Document -> success
+2026-05-10 17:45:17,567 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/147390199/
+2026-05-10 17:45:18,237 | INFO | Result: Full Document -> success
+2026-05-10 17:45:18,239 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/56699948/
+2026-05-10 17:45:18,801 | INFO | Result: Full Document -> success
+2026-05-10 17:45:18,802 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/68207149/
+2026-05-10 17:45:19,424 | INFO | Result: Full Document -> success
+2026-05-10 17:45:19,425 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/71199828/
+2026-05-10 17:45:20,093 | INFO | Result: Full Document -> success
+2026-05-10 17:45:20,094 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/59897051/
+2026-05-10 17:45:20,813 | INFO | Result: Full Document -> success
+2026-05-10 17:45:20,815 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/101865435/
+2026-05-10 17:45:21,395 | INFO | Result: Full Document -> success
+2026-05-10 17:45:21,396 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/128274054/
+2026-05-10 17:45:22,215 | INFO | Result: Full Document -> success
+2026-05-10 17:45:22,217 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/36272070/
+2026-05-10 17:45:22,766 | INFO | Result: Full Document -> success
+2026-05-10 17:45:22,767 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/173972362/
+2026-05-10 17:45:23,270 | INFO | Result: Full Document -> success
+2026-05-10 17:45:23,272 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/114497915/
+2026-05-10 17:45:23,835 | INFO | Result: Full Document -> success
+2026-05-10 17:45:23,836 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/187064597/
+2026-05-10 17:45:24,390 | INFO | Result: Full Document -> success
+2026-05-10 17:45:24,392 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/98223685/
+2026-05-10 17:45:24,953 | INFO | Result: Full Document -> success
+2026-05-10 17:45:24,955 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/168068781/
+2026-05-10 17:45:25,450 | INFO | Result: Full Document -> success
+2026-05-10 17:45:25,451 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/132743320/
+2026-05-10 17:45:26,185 | INFO | Result: Full Document -> success
+2026-05-10 17:45:26,186 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/113775404/
+2026-05-10 17:45:26,699 | INFO | Result: Full Document -> success
+2026-05-10 17:45:26,700 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/80271632/
+2026-05-10 17:45:27,164 | INFO | Result: Full Document -> success
+2026-05-10 17:45:27,166 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/113138773/
+2026-05-10 17:45:27,637 | INFO | Result: Full Document -> success
+2026-05-10 17:45:27,638 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/172915181/
+2026-05-10 17:45:28,171 | INFO | Result: Full Document -> success
+2026-05-10 17:45:28,172 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/135883640/
+2026-05-10 17:45:28,879 | INFO | Result: Full Document -> success
+2026-05-10 17:45:28,880 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/43741476/
+2026-05-10 17:45:29,604 | INFO | Result: Full Document -> success
+2026-05-10 17:45:29,605 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/179410258/
+2026-05-10 17:45:30,101 | INFO | Result: Full Document -> success
+2026-05-10 17:45:30,102 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/51287776/
+2026-05-10 17:45:30,625 | INFO | Result: Full Document -> success
+2026-05-10 17:45:30,626 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/174276637/
+2026-05-10 17:45:31,115 | INFO | Result: Full Document -> success
+2026-05-10 17:45:31,116 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/71479511/
+2026-05-10 17:45:31,615 | INFO | Result: Full Document -> success
+2026-05-10 17:45:31,616 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/42573768/
+2026-05-10 17:45:32,084 | INFO | Result: Full Document -> success
+2026-05-10 17:45:32,085 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/97881509/
+2026-05-10 17:45:32,571 | INFO | Result: Full Document -> success
+2026-05-10 17:45:32,571 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/17071886/
+2026-05-10 17:45:33,067 | INFO | Result: Full Document -> success
+2026-05-10 17:45:33,068 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/2710325/
+2026-05-10 17:45:33,503 | INFO | Result: Full Document -> success
+2026-05-10 17:45:33,504 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/42228674/
+2026-05-10 17:45:33,976 | INFO | Result: Full Document -> success
+2026-05-10 17:45:33,977 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/87916970/
+2026-05-10 17:45:34,435 | INFO | Result: Full Document -> success
+2026-05-10 17:45:34,436 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/50068052/
+2026-05-10 17:45:34,899 | INFO | Result: Full Document -> success
+2026-05-10 17:45:34,900 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/174204263/
+2026-05-10 17:45:35,324 | INFO | Result: Full Document -> success
+2026-05-10 17:45:35,324 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/172759716/
+2026-05-10 17:45:35,805 | INFO | Result: Full Document -> success
+2026-05-10 17:45:35,806 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/137485518/
+2026-05-10 17:45:36,256 | INFO | Result: Full Document -> success
+2026-05-10 17:45:36,256 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/94188064/
+2026-05-10 17:45:36,705 | INFO | Result: Full Document -> success
+2026-05-10 17:45:36,706 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/60394627/
+2026-05-10 17:45:37,292 | INFO | Result: Full Document -> success
+2026-05-10 17:45:37,293 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/154957176/
+2026-05-10 17:45:37,930 | INFO | Result: Full Document -> success
+2026-05-10 17:45:37,931 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1127741/
+2026-05-10 17:45:38,378 | INFO | Result: Section 4 in The Indian Penal Code, 1860 -> success
+2026-05-10 17:45:38,380 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1569253/
+2026-05-10 17:45:39,474 | INFO | Result: Entire Act -> success
+2026-05-10 17:45:39,475 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/545792/
+2026-05-10 17:45:40,047 | INFO | Result: Section 2 in The Income Tax Act , 1961 -> success
+2026-05-10 17:45:40,048 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/789969/
+2026-05-10 17:45:46,698 | INFO | Result: Entire Act -> success
+2026-05-10 17:45:46,699 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1277726/
+2026-05-10 17:45:47,212 | INFO | Result: Section 132 in The Income Tax Act , 1961 -> success
+2026-05-10 17:45:47,213 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1318767/
+2026-05-10 17:45:47,690 | INFO | Result: Section 67 in The Information Technology Act , 2000 -> success
+2026-05-10 17:45:47,691 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1965344/
+2026-05-10 17:45:48,804 | INFO | Result: Entire Act -> success
+2026-05-10 17:45:48,805 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/326206/
+2026-05-10 17:45:49,325 | INFO | Result: Section 66 in The Information Technology Act , 2000 -> success
+2026-05-10 17:45:49,326 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1745798/
+2026-05-10 17:45:49,723 | INFO | Result: Section 464 in The Indian Penal Code, 1860 -> success
+2026-05-10 17:45:49,724 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1031309/
+2026-05-10 17:45:50,158 | INFO | Result: Section 3 in The Indian Evidence Act , 1872 -> success
+2026-05-10 17:45:50,159 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1953529/
+2026-05-10 17:45:50,876 | INFO | Result: Entire Act -> success
+2026-05-10 17:45:50,877 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1025384/
+2026-05-10 17:45:51,393 | INFO | Result: Section 45 in The Indian Evidence Act , 1872 -> success
+2026-05-10 17:45:51,395 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1053937/
+2026-05-10 17:45:52,278 | INFO | Result: Section 466 in The Indian Penal Code, 1860 -> success
+2026-05-10 17:45:52,279 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/770022/
+2026-05-10 17:45:52,912 | INFO | Result: Section 73 in The Indian Evidence Act , 1872 -> success
+2026-05-10 17:45:52,913 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1477060/
+2026-05-10 17:45:53,540 | INFO | Result: Section 51 in The Information Technology Act , 2000 -> success
+2026-05-10 17:45:53,541 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/150327236/
+2026-05-10 17:45:53,965 | INFO | Result: Section 46 in The Unlawful Activities (Prevention) Act , 1967 -> success
+2026-05-10 17:45:53,966 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1389751/
+2026-05-10 17:45:55,037 | INFO | Result: Entire Act -> success
+2026-05-10 17:45:55,038 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1962230/
+2026-05-10 17:45:55,867 | INFO | Result: Section 64 in The Information Technology Act , 2000 -> success
+2026-05-10 17:45:55,868 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1865820/
+2026-05-10 17:45:56,593 | INFO | Result: Section 55 in The Information Technology Act , 2000 -> success
+2026-05-10 17:45:56,594 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1040076/
+2026-05-10 17:45:57,204 | INFO | Result: Section 24 in The Information Technology Act , 2000 -> success
+2026-05-10 17:45:57,205 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1514290/
+2026-05-10 17:45:57,983 | INFO | Result: Section 23 in The Information Technology Act , 2000 -> success
+2026-05-10 17:45:57,984 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1735825/
+2026-05-10 17:45:58,800 | INFO | Result: Section 91 in The Information Technology Act , 2000 -> success
+2026-05-10 17:45:58,801 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/1774397/
+2026-05-10 17:45:59,196 | INFO | Result: Section 61 in The Information Technology Act , 2000 -> success
+2026-05-10 17:45:59,197 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/993519/
+2026-05-10 17:45:59,943 | INFO | Result: Section 33 in The Information Technology Act , 2000 -> success
+2026-05-10 17:45:59,944 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/940650/
+2026-05-10 17:46:00,742 | INFO | Result: Section 16 in The Information Technology Act , 2000 -> success
+2026-05-10 17:46:00,743 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/70981105/
+2026-05-10 17:46:01,686 | INFO | Result: Full Document -> success
+2026-05-10 17:46:01,687 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/52491729/
+2026-05-10 17:46:02,419 | INFO | Result: Full Document -> success
+2026-05-10 17:46:02,420 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/196894795/
+2026-05-10 17:46:03,133 | INFO | Result: Full Document -> success
+2026-05-10 17:46:03,133 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/116355009/
+2026-05-10 17:46:03,796 | INFO | Result: Full Document -> success
+2026-05-10 17:46:03,797 | INFO | Scraping [1/1]: https://indiankanoon.org/doc/192504406/
+2026-05-10 17:46:05,590 | WARNING | Attempt failed for https://indiankanoon.org/doc/192504406/ (('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)))

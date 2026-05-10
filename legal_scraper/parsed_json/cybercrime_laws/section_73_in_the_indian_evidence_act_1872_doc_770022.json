@@ -1,0 +1,55 @@
+{
+  "source_file": "C:\\Users\\sathv\\OneDrive\\Documents\\data-sources\\legal_scraper\\raw_html\\cybercrime_laws\\section_73_in_the_indian_evidence_act_1872_doc_770022.html",
+  "document_type": "html",
+  "title": "Section 73 in The Indian Evidence Act, 1872",
+  "sections": [
+    {
+      "heading": "source",
+      "level": 1,
+      "content": [
+        "Union of India - Section"
+      ]
+    },
+    {
+      "heading": "73. Comparison of signature, writing or seal with others admitted or proved.",
+      "level": 2,
+      "content": [
+        "In order to ascertain whether a signature, writing or seal is that of the person by whom it purports to have been written or made, any signature, writing or seal admitted or proved to the satisfaction of the Court to have been written or made by that person may be compared with the one which is to be proved, although that signature, writing or seal has not been produced or proved for any other purpose.",
+        "The Court may direct any person present in Court to write any words or figures for the purpose of enabling the Court to compare the words or figures so written with any words or figures alleged to have been written by such person.",
+        "[This section applies also, with any necessary modifications, to finger impressions.] [Inserted by Act 5 of 1899, Section 3.]",
+        "73-A. Proof as to verification of digital signature.",
+        "In order to ascertain whether a digital signature is that of the person by whom it purports to have been affixed, the Court may direct -",
+        "that person or the Controller or the Certifying Authority to produce the Digital Signature Certificate;",
+        "any other person to apply the public key listed in the Digital Signature Certificate and verify the digital signature purported to have been affixed by that person.\"",
+        "Explanation. : For the purposes of this section, \"Controller\" means the Controller appointed under sub-section (1) of section 17 of the Information Technology Act, 2000.] [Inserted by Act 21 of 2000 , Section 92 and Sch.II (w.e.f. 17.10.2000).]",
+        "Public Documents"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "href": "/search/?formInput=cites:770022",
+      "text": "0"
+    },
+    {
+      "href": "/search/?formInput=citedby:770022",
+      "text": "3346"
+    },
+    {
+      "href": "/doc/1953529/",
+      "text": "Entire Act"
+    },
+    {
+      "href": "/doc/81187358/",
+      "text": "(a)"
+    },
+    {
+      "href": "/doc/114629868/",
+      "text": "(b)"
+    },
+    {
+      "href": "/doc/1965344/",
+      "text": "21 of 2000"
+    }
+  ]
+}

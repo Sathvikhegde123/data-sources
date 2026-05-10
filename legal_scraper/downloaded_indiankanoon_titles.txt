@@ -1,0 +1,6 @@
+Downloaded IndiaKanoon documents
+================================
+Main list: metadata/downloaded_indiankanoon_titles.txt
+
+This file is a shortcut so you can find the list from the project root.
+The full list includes the actual URLs and robots status for each entry.

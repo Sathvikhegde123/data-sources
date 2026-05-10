@@ -1,0 +1,59 @@
+{
+  "source_file": "C:\\Users\\sathv\\OneDrive\\Documents\\data-sources\\legal_scraper\\raw_html\\cybercrime_laws\\section_45_in_the_indian_evidence_act_1872_doc_1025384.html",
+  "document_type": "html",
+  "title": "Section 45 in The Indian Evidence Act, 1872",
+  "sections": [
+    {
+      "heading": "source",
+      "level": 1,
+      "content": [
+        "Union of India - Section"
+      ]
+    },
+    {
+      "heading": "45. Opinions of experts.",
+      "level": 2,
+      "content": [
+        "When the Court has to form an opinion upon a point of foreign law, or of science or art, or as to identity of handwriting [or finger impressions] [Inserted by Act 5 of 1899, Section 3. For discussion in Council as to whether [finger impressions] include [thumb impressions,] see Gazette of India, 1898, Pt. VI, p.24.] , the opinions upon that point of persons specially skilled in such foreign law, science or art, [or in questions as to identity of handwriting] [Inserted by Act 18 of 1871, Section 4.] [or finger-impressions] [Inserted by Act 5 of 1899, Section 3. For discussion in Council as to whether [Finger impressions] include [thumb impressions,] see Gazette of India, 1898, Pt.VI, p.24.] are relevant facts.",
+        "Such persons are called experts.",
+        "Illustrations",
+        "The questions is, whether the death of A was caused by poison.",
+        "The opinions of experts as to the symptoms produced by the poison by which A is supposed to have died, are relevant.",
+        "the question is, whether A, at the time of doing a certain act, was, by reason of unsoundness of mind, incapable of knowing the nature of the act, or that he was doing what was either wrong or contrary to law.",
+        "The opinions of experts upon the question whether the symptoms exhibited by A commonly show unsoundness of mind, and whether such unsoundness of mind usually renders persons incapable of knowing the nature of the acts which they do, or of knowing that what they do is either wrong or contrary to law, are relevant.",
+        "The question is, whether a certain document was written by A. Another document is produced which is proved or admitted to have been written by A.",
+        "The opinions of experts on the question whether the two documents were written by the same person or by different persons, are relevant.",
+        "45A. Opinion of Examiner of Electronic Evidence.",
+        "[Inserted by the Information Technology (Amendment) Act, 2008 (10 of 2009), Section 52(b).]",
+        "When in a proceeding, the court has to form an opinion on any matter rekating to any information transmitted or stored in any computer resource or any other electronic or digital form, the opinion of the Examinor of Electronic Evidence referred to in Section 79-A of the Information Technology Act 2000(21 of 2000) is a relevant fact.",
+        "Explaination - For the purposes of this Section, an Examinor of Electronic Evidence shall be an expert.]"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "href": "/search/?formInput=cites:1025384",
+      "text": "0"
+    },
+    {
+      "href": "/search/?formInput=citedby:1025384",
+      "text": "4861"
+    },
+    {
+      "href": "/doc/1953529/",
+      "text": "Entire Act"
+    },
+    {
+      "href": "/doc/1580228/",
+      "text": "(a)"
+    },
+    {
+      "href": "/doc/2839/",
+      "text": "(b)"
+    },
+    {
+      "href": "/doc/1969006/",
+      "text": "(c)"
+    }
+  ]
+}

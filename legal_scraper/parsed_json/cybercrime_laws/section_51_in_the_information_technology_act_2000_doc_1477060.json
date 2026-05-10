@@ -1,0 +1,50 @@
+{
+  "source_file": "C:\\Users\\sathv\\OneDrive\\Documents\\data-sources\\legal_scraper\\raw_html\\cybercrime_laws\\section_51_in_the_information_technology_act_2000_doc_1477060.html",
+  "document_type": "html",
+  "title": "Section 51 in The Information Technology Act, 2000",
+  "sections": [
+    {
+      "heading": "source",
+      "level": 1,
+      "content": [
+        "Union of India - Section"
+      ]
+    },
+    {
+      "heading": "51. Term of office, conditions of service, etc., of Chairperson and Members. -",
+      "level": 2,
+      "content": [
+        "The Chairperson or Member of the Cyber Appellate Tribunal shall hold office for a term of five years from the date on which he enters upon his office or until he attains the age of sixty-five years, whichever is earlier.",
+        "Before appointing any person as the Chairperson or Member of the Cyber Appellate Tribunal, the Central Government shall satisfy itself that the person does not have any such financial or other interest as is likely to affect prejudicially his functions as such Chairperson or Member.",
+        "An officer of the Central Government or State Government on his selection as the Chairperson or Member of the Cyber Appellate Tribunal, as the case may be, shall have to retire from service before joining as such Chairperson or Member.",
+        "\"51. Term of office. -The Presiding Officer of a Cyber Appellate Tribunal shall hold office for a term of five years from the date on which he enters upon his office or until he attains the age of sixty-five years whichever is earlier."
+      ]
+    }
+  ],
+  "links": [
+    {
+      "href": "/search/?formInput=cites:1477060",
+      "text": "0"
+    },
+    {
+      "href": "/search/?formInput=citedby:1477060",
+      "text": "11"
+    },
+    {
+      "href": "/doc/1965344/",
+      "text": "Entire Act"
+    },
+    {
+      "href": "/doc/156473670/",
+      "text": "(1)"
+    },
+    {
+      "href": "/doc/15592782/",
+      "text": "(2)"
+    },
+    {
+      "href": "/doc/167662728/",
+      "text": "(3)"
+    }
+  ]
+}

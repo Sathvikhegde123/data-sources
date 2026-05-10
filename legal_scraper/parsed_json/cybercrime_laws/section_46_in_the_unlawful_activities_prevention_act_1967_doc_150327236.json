@@ -1,0 +1,49 @@
+{
+  "source_file": "C:\\Users\\sathv\\OneDrive\\Documents\\data-sources\\legal_scraper\\raw_html\\cybercrime_laws\\section_46_in_the_unlawful_activities_prevention_act_1967_doc_150327236.html",
+  "document_type": "html",
+  "title": "Section 46 in The Unlawful Activities (Prevention) Act, 1967",
+  "sections": [
+    {
+      "heading": "source",
+      "level": 1,
+      "content": [
+        "Union of India - Section"
+      ]
+    },
+    {
+      "heading": "46. Admissibility of evidence collected through the interception of communications.—",
+      "level": 2,
+      "content": [
+        "Notwithstanding anything contained in the Indian Evidence Act, 1872 ( 1 of 1872 ) or any other law for the time being in force, the evidence collected through the interception of wire, electronic or oral communication under the provisions of the Indian Telegraph Act, 1885 ( 13 of 1885 ) or the Information Technology Act, 2000 ( 21 of 2000 ) or any other law for the time being in force, shall be admissible as evidence against the accused in the court during the trial of a case:",
+        "Provided that the contents of any wire, electronic or oral communication intercepted or evidence derived therefrom shall not be received in evidence or otherwise disclosed in any trial, hearing or other proceeding in any court unless each accused has been furnished with a copy of the order of the competent authority under the aforesaid law, under which the interception was directed, not less than ten days before trial, hearing or proceeding:",
+        "Provided further that the period of ten days may be waived by the judge trying the matter, if he comes to the conclusion that it was not possible to furnish the accused with such order ten days before the trial, hearing or proceeding and that the accused shall not be prejudiced by the delay in receiving such order."
+      ]
+    }
+  ],
+  "links": [
+    {
+      "href": "/search/?formInput=cites:150327236",
+      "text": "0"
+    },
+    {
+      "href": "/search/?formInput=citedby:150327236",
+      "text": "10"
+    },
+    {
+      "href": "/doc/1389751/",
+      "text": "Entire Act"
+    },
+    {
+      "href": "/doc/1953529/",
+      "text": "1 of 1872"
+    },
+    {
+      "href": "/doc/357830/",
+      "text": "13 of 1885"
+    },
+    {
+      "href": "/doc/1965344/",
+      "text": "21 of 2000"
+    }
+  ]
+}

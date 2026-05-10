@@ -1,0 +1,46 @@
+{
+  "source_file": "C:\\Users\\sathv\\OneDrive\\Documents\\data-sources\\legal_scraper\\raw_html\\cybercrime_laws\\section_66_in_the_information_technology_act_2000_doc_326206.html",
+  "document_type": "html",
+  "title": "Section 66 in The Information Technology Act, 2000",
+  "sections": [
+    {
+      "heading": "source",
+      "level": 1,
+      "content": [
+        "Union of India - Section"
+      ]
+    },
+    {
+      "heading": "66. Computer related offences. -",
+      "level": 2,
+      "content": [
+        "If any person, dishonestly or fraudulently, does any act referred to in section 43, he shall be punishable with imprisonment for a term which may extend to three years or with fine which may extend to five lakh rupees or with both.",
+        "Explanation. -For the purposes of this section,-",
+        "the word \"dishonestly\" shall have the meaning assigned to it in section 24 of the Indian Penal Code (45 of 1860);",
+        "the word \"fraudulently\" shall have the meaning assigned to it in section 25 of the Indian Penal Code (45 of 1860)."
+      ]
+    }
+  ],
+  "links": [
+    {
+      "href": "/search/?formInput=cites:326206",
+      "text": "0"
+    },
+    {
+      "href": "/search/?formInput=citedby:326206",
+      "text": "6098"
+    },
+    {
+      "href": "/doc/1965344/",
+      "text": "Entire Act"
+    },
+    {
+      "href": "/doc/30640546/",
+      "text": "(a)"
+    },
+    {
+      "href": "/doc/8637586/",
+      "text": "(b)"
+    }
+  ]
+}

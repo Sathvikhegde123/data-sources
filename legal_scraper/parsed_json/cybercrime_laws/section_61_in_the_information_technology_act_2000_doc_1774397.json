@@ -1,0 +1,35 @@
+{
+  "source_file": "C:\\Users\\sathv\\OneDrive\\Documents\\data-sources\\legal_scraper\\raw_html\\cybercrime_laws\\section_61_in_the_information_technology_act_2000_doc_1774397.html",
+  "document_type": "html",
+  "title": "Section 61 in The Information Technology Act, 2000",
+  "sections": [
+    {
+      "heading": "source",
+      "level": 1,
+      "content": [
+        "Union of India - Section"
+      ]
+    },
+    {
+      "heading": "61. Civil court not to have jurisdiction.-",
+      "level": 2,
+      "content": [
+        "No court shall have jurisdiction to entertain any suit or proceeding in respect of any matter which an adjudicating officer appointed under this Act or the Cyber Appellate Tribunal constituted under this Act is empowered by or under this Act to determine and no injunction shall be granted by any court or other authority in respect of any action taken or to be taken in pursuance of any power conferred by or under this Act."
+      ]
+    }
+  ],
+  "links": [
+    {
+      "href": "/search/?formInput=cites:1774397",
+      "text": "0"
+    },
+    {
+      "href": "/search/?formInput=citedby:1774397",
+      "text": "12"
+    },
+    {
+      "href": "/doc/1965344/",
+      "text": "Entire Act"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "source_file": "C:\\Users\\sathv\\OneDrive\\Documents\\data-sources\\legal_scraper\\raw_html\\cybercrime_laws\\section_16_in_the_information_technology_act_2000_doc_940650.html",
+  "document_type": "html",
+  "title": "Section 16 in The Information Technology Act, 2000",
+  "sections": [
+    {
+      "heading": "source",
+      "level": 1,
+      "content": [
+        "Union of India - Section"
+      ]
+    },
+    {
+      "heading": "16. Security procedures and practices.-",
+      "level": 2,
+      "content": [
+        "The Central Government may, for the purposes of sections 14 and 15, prescribe the security procedures and practices:",
+        "Provided that in prescribing such security procedures and practices, the Central Government shall have regard to the commercial circumstances, nature of transactions and such other related factors as it may consider appropriate."
+      ]
+    }
+  ],
+  "links": [
+    {
+      "href": "/search/?formInput=cites:940650",
+      "text": "0"
+    },
+    {
+      "href": "/search/?formInput=citedby:940650",
+      "text": "13"
+    },
+    {
+      "href": "/doc/1965344/",
+      "text": "Entire Act"
+    }
+  ]
+}
