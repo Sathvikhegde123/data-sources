@@ -14,6 +14,9 @@ RAW_HTML_DIR = BASE_DIR / "raw_html"
 RAW_PDF_DIR = BASE_DIR / "raw_pdfs"
 PARSED_DIR = BASE_DIR / "parsed_json"
 PARSER_LOG = BASE_DIR / "logs" / "parser.log"
+EXTERNAL_PDF_DIRS = [
+    BASE_DIR.parent / "property-acts-and-laws",
+]
 
 
 def setup_logging() -> None:
@@ -165,6 +168,13 @@ def parse_pdf_file(path: Path, max_pages: int = 20) -> Dict:
     }
 
 
+def format_pdf_title(stem: str) -> str:
+    parts = stem.replace("_", " ").split()
+    if not parts:
+        return stem
+    return " ".join(part.capitalize() for part in parts)
+
+
 def write_json(payload: Dict, output_path: Path) -> None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(
@@ -207,6 +217,25 @@ def parse_all_pdfs(max_pages: int) -> int:
     return count
 
 
+def parse_external_pdfs(max_pages: int) -> int:
+    count = 0
+    for source_dir in EXTERNAL_PDF_DIRS:
+        if not source_dir.exists():
+            continue
+        for pdf_file in source_dir.rglob("*.pdf"):
+            output_path = PARSED_DIR / "property_rights" / "acts" / f"{pdf_file.stem}.json"
+            try:
+                parsed = parse_pdf_file(pdf_file, max_pages=max_pages)
+                parsed["title"] = format_pdf_title(pdf_file.stem)
+                write_json(parsed, output_path)
+                count += 1
+                logging.info("Parsed external PDF -> %s", output_path)
+            except Exception as exc:
+                logging.exception("Failed parsing external PDF %s: %s", pdf_file, exc)
+
+    return count
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Parse scraped HTML and PDFs into JSON.")
     parser.add_argument("--max-pdf-pages", type=int, default=20)
@@ -216,8 +245,14 @@ def main() -> None:
 
     html_count = parse_all_html()
     pdf_count = parse_all_pdfs(max_pages=args.max_pdf_pages)
+    external_pdf_count = parse_external_pdfs(max_pages=args.max_pdf_pages)
 
-    logging.info("Finished parsing. HTML files: %s | PDF files: %s", html_count, pdf_count)
+    logging.info(
+        "Finished parsing. HTML files: %s | PDF files: %s | External PDFs: %s",
+        html_count,
+        pdf_count,
+        external_pdf_count,
+    )
 
 
 if __name__ == "__main__":
