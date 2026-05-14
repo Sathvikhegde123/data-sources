@@ -9,6 +9,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from psycopg2.extras import RealDictCursor
+import google.generativeai as genai
 
 from legal_property_rag_pipeline.legal_property_rag import LegalPropertyRAG
 
@@ -119,7 +120,21 @@ class RagRequest(BaseModel):
     doc_type_filter: Optional[str] = None
 
 
+class ExplainRequest(BaseModel):
+    query: str = Field(..., min_length=3, max_length=4000)
+    document_title: str = Field(..., max_length=500)
+    document_summary: Optional[str] = Field(None, max_length=2000)
+    case_metadata: Optional[Dict[str, Any]] = None
+    full_document: Optional[Dict[str, Any]] = None
+
+
 load_env(ENV_PATH)
+
+# Configure Gemini
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
+if GEMINI_API_KEY:
+    genai.configure(api_key=GEMINI_API_KEY)
+
 app = FastAPI(title="Property Rights API")
 
 app.add_middleware(
@@ -183,6 +198,144 @@ def rag_record_detail(record_id: str) -> Dict[str, Any]:
         "record": record,
         "parsed_json": parsed_json,
     }
+
+
+@app.post("/api/explain")
+def explain_relevance(payload: ExplainRequest) -> Dict[str, Any]:
+    """
+    Use Gemini to explain how a retrieved document is relevant to the user's query.
+    Sends full document content for better context, but intelligently truncates to avoid token limits.
+    """
+    if not GEMINI_API_KEY:
+        raise HTTPException(status_code=503, detail="Gemini API key not configured")
+
+    try:
+        # Extract key document content from full_document JSON
+        full_doc_context = ""
+        if payload.full_document:
+            doc = payload.full_document
+            structured = doc.get("structured_data", {})
+            case_meta = structured.get("case_metadata", {})
+            
+            # Build rich context from the full document
+            context_lines = []
+            
+            # Add case-specific details
+            if case_meta.get("dispute_summary"):
+                context_lines.append(f"Dispute Summary:\n{case_meta['dispute_summary'][:1000]}")
+            
+            if case_meta.get("plain_english_translation"):
+                context_lines.append(f"Plain English:\n{case_meta['plain_english_translation'][:1000]}")
+            
+            if case_meta.get("court_reasoning"):
+                context_lines.append(f"Court Reasoning:\n{case_meta['court_reasoning'][:800]}")
+            
+            if case_meta.get("verdict_order"):
+                context_lines.append(f"Verdict:\n{case_meta['verdict_order'][:600]}")
+            
+            if case_meta.get("parties"):
+                parties = case_meta.get("parties", [])
+                if parties:
+                    party_str = ", ".join([f"{p.get('role')}: {p.get('name')}" for p in parties if isinstance(p, dict)])
+                    if party_str:
+                        context_lines.append(f"Parties: {party_str}")
+            
+            # Add raw text if available (limited)
+            raw_text = doc.get("raw_text", "")
+            if raw_text:
+                context_lines.append(f"Key Content:\n{raw_text[:1200]}")
+            
+            full_doc_context = "\n\n".join(context_lines)
+        
+        # Build the prompt with full document context
+        if full_doc_context:
+            prompt = f"""Based on the following property rights legal document and the user's scenario, 
+explain in 3-4 sentences how this document/case IS or IS NOT relevant to their situation. 
+Be specific about which aspects match or don't match.
+
+USER'S PROPERTY RIGHTS SCENARIO:
+{payload.query}
+
+LEGAL DOCUMENT CONTENT:
+{full_doc_context}
+
+DOCUMENT TITLE: {payload.document_title}
+
+Provide a clear, detailed explanation of relevance without legal jargon. 
+Focus on practical applicability to their situation."""
+        else:
+            # Fallback to metadata-only if no full document
+            context_parts = [
+                f"User's Property Rights Scenario: {payload.query}",
+                f"Document Title: {payload.document_title}",
+            ]
+            
+            if payload.document_summary:
+                context_parts.append(f"Document Summary: {payload.document_summary}")
+            
+            if payload.case_metadata:
+                meta = payload.case_metadata
+                if isinstance(meta, dict):
+                    if meta.get("court"):
+                        context_parts.append(f"Court: {meta['court']}")
+                    if meta.get("dispute_summary"):
+                        context_parts.append(f"Dispute: {meta['dispute_summary'][:500]}")
+                    if meta.get("verdict_order"):
+                        context_parts.append(f"Verdict: {meta['verdict_order'][:500]}")
+            
+            context = "\n".join(context_parts)
+            
+            prompt = f"""Based on this information, explain in 3-4 sentences how this legal document/case is relevant to the user's property rights scenario.
+
+{context}
+
+Provide a clear explanation of the relevance without legal jargon."""
+
+        # Try different model names as fallback
+        models_to_try = ["gemini-2.5-flash"]
+        response = None
+        last_error = None
+        
+        for model_name in models_to_try:
+            try:
+                model = genai.GenerativeModel(model_name)
+                response = model.generate_content(prompt)
+                break  # Success, exit loop
+            except Exception as e:
+                last_error = e
+                print(f"Model {model_name} failed: {str(e)}")
+                continue
+        
+        if response is None:
+            raise last_error or Exception("All Gemini models failed")
+        
+        # Handle different response formats
+        explanation = None
+        if hasattr(response, 'text'):
+            explanation = response.text
+        elif response.candidates:
+            explanation = response.candidates[0].content.parts[0].text
+        
+        if not explanation or not explanation.strip():
+            explanation = "This case may have relevance to your property rights scenario."
+        
+        return {
+            "explanation": explanation.strip(),
+            "status": "success"
+        }
+    
+    except Exception as exc:
+        import traceback
+        error_detail = f"Gemini API error: {str(exc)}"
+        print(f"Explain error: {traceback.format_exc()}")
+        raise HTTPException(
+            status_code=500, 
+            detail=error_detail
+        ) from exc
+        raise HTTPException(
+            status_code=500, 
+            detail=error_detail
+        ) from exc
 
 
 @app.get("/api/cases")

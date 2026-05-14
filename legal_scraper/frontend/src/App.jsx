@@ -344,13 +344,15 @@ export default function App() {
                     key={`rag-${card.type}-${card.id}`}
                     card={card}
                     label={typeLabels[card.type] || "Document"}
-                    onSelect={() =>
+                    onSelect={() => {
+                      const result = ragState.results.find(r => r.id === card.id);
                       setRagSelected({
                         id: card.id,
                         type: card.type,
-                        relativePath: card.relativePath
-                      })
-                    }
+                        relativePath: card.relativePath,
+                        similarityScore: result?.similarity_score || 0
+                      });
+                    }}
                   />
                 ))}
               </div>
@@ -417,6 +419,7 @@ export default function App() {
         selection={ragSelected}
         onClose={() => setRagSelected(null)}
         apiBase={API_BASE}
+        query={ragQuery}
       />
     </div>
   );

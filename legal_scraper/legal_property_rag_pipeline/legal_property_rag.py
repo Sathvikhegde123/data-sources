@@ -277,25 +277,61 @@ class LegalPropertyRAG:
         )
         self.tfidf_matrix = self.vectorizer.fit_transform(self.document_texts)
 
+    def _calculate_enhanced_score(self, base_score: float, query_words: set, 
+                                  doc_keywords: list, doc_type: str) -> float:
+        """
+        Calculate enhanced relevance score combining:
+        - Base TF-IDF similarity (0-1)
+        - Keyword match boost
+        - Document type bonus
+        """
+        score = base_score
+        
+        # Keyword overlap boost
+        doc_keywords_lower = set(k.lower() for k in doc_keywords)
+        keyword_matches = query_words.intersection(doc_keywords_lower)
+        keyword_boost = min(0.3, len(keyword_matches) * 0.05)
+        score += keyword_boost
+        
+        # Document type specific boost
+        if doc_type == 'case':
+            score *= 1.15  # Cases are most relevant for property disputes
+        
+        return min(1.0, score)  # Cap at 1.0
+
     def query(self, user_scenario: str, top_k: int = 5, 
               doc_type_filter: Optional[str] = None) -> List[RetrievedDocument]:
         processed_query = self._preprocess_text(user_scenario)
         query_words = set(processed_query.split())
         legal_matches = query_words.intersection(self.LEGAL_KEYWORDS)
+        
+        # Aggressive boosting for legal keywords
         if legal_matches:
-            boost_text = ' '.join(list(legal_matches) * 3)
+            boost_text = ' '.join(list(legal_matches) * 5)
             processed_query = processed_query + ' ' + boost_text
 
         query_vector = self.vectorizer.transform([processed_query])
-        similarities = cosine_similarity(query_vector, self.tfidf_matrix).flatten()
+        base_similarities = cosine_similarity(query_vector, self.tfidf_matrix).flatten()
+
+        # Calculate enhanced scores
+        enhanced_scores = np.zeros_like(base_similarities)
+        for i, base_score in enumerate(base_similarities):
+            meta = self.document_metadata[i]
+            enhanced_scores[i] = self._calculate_enhanced_score(
+                base_score, 
+                query_words,
+                meta['keywords'],
+                meta['document_type']
+            )
 
         if doc_type_filter:
             for i, meta in enumerate(self.document_metadata):
                 if meta['document_type'] != doc_type_filter:
-                    similarities[i] = -1
+                    enhanced_scores[i] = -1
 
-        top_indices = np.argsort(similarities)[::-1]
-        top_indices = [idx for idx in top_indices if similarities[idx] > 0][:top_k]
+        # More lenient filtering - show matches with score > 0.01 instead of > 0
+        top_indices = np.argsort(enhanced_scores)[::-1]
+        top_indices = [idx for idx in top_indices if enhanced_scores[idx] > 0.01][:top_k]
 
         results = []
         for rank, idx in enumerate(top_indices, 1):
@@ -305,7 +341,7 @@ class LegalPropertyRAG:
                 id=meta['id'],
                 title=meta['title'],
                 document_type=meta['document_type'],
-                similarity_score=float(similarities[idx]),
+                similarity_score=float(enhanced_scores[idx]),
                 keywords=meta['keywords'],
                 summary=meta['summary'],
                 court=meta['court'],
@@ -324,11 +360,11 @@ class LegalPropertyRAG:
         return results
 
     def get_confidence_level(self, score: float) -> str:
-        if score >= 0.20:
+        if score >= 0.50:
             return "HIGH"
-        elif score >= 0.12:
+        elif score >= 0.30:
             return "MEDIUM"
-        elif score >= 0.08:
+        elif score >= 0.15:
             return "MODERATE"
         else:
             return "LOW"

@@ -652,6 +652,38 @@ body::before {
   }
 }
 
+.relevance-section {
+  background: #f0f7ff;
+  border: 1px solid #d4e9f7;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.relevance-section h3 {
+  margin: 0 0 8px;
+  font-size: 0.95rem;
+  color: var(--accent-dark);
+}
+
+.relevance-section p {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.primary-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.primary-button:disabled:hover {
+  transform: none;
+  box-shadow: 0 8px 20px rgba(15, 118, 110, 0.25);
+}
+
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;
