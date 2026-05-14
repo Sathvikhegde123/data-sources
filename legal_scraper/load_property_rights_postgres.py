@@ -371,6 +371,71 @@ def extract_lines_from_text(text: str, limit: int = 6) -> List[str]:
     return [part for part in parts if part][:limit]
 
 
+def normalize_pdf_artifacts(text: str) -> str:
+    replacements = {
+        "â€”": "—",
+        "â€“": "-",
+        "â€œ": '"',
+        "â€": '"',
+        "â€™": "'",
+        "Â½": "1/2",
+    }
+    for bad, good in replacements.items():
+        text = text.replace(bad, good)
+    return normalize_whitespace(text)
+
+
+def derive_act_sections_from_pages(pages: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    page_texts = [str(page.get("text") or "") for page in pages if page.get("text")]
+    if not page_texts:
+        return []
+
+    text = normalize_pdf_artifacts(" ".join(page_texts))
+    start_match = re.search(r"\bACT\s+NO\.\s+\d+\s+OF\s+\d{4}\b", text, re.IGNORECASE)
+    if start_match:
+        text = text[start_match.end() :]
+
+    matches = list(re.finditer(r"(?<![A-Za-z0-9])(\d{1,3}[A-Z]?)\.\s+", text))
+    sections: List[Dict[str, Any]] = []
+    seen_numbers = set()
+
+    for index, match in enumerate(matches):
+        number = match.group(1)
+        if number in seen_numbers:
+            continue
+        next_start = matches[index + 1].start() if index + 1 < len(matches) else len(text)
+        segment = normalize_pdf_artifacts(text[match.end() : next_start])
+        if len(segment) < 20:
+            continue
+
+        title_match = re.search(r"\s(?:—|-)\s*|\.\s+", segment)
+        if title_match:
+            title = segment[: title_match.start()].strip(" .—-")
+            body = segment[title_match.end() :].strip()
+        else:
+            title = segment[:80].strip(" .—-")
+            body = segment
+
+        if not title or len(title) > 160:
+            title = f"Section {number}"
+        if not body:
+            body = segment
+
+        sections.append(
+            {
+                "heading": f"{number}. {title}",
+                "level": 2,
+                "content": [body],
+            }
+        )
+        seen_numbers.add(number)
+
+        if len(sections) >= 300:
+            break
+
+    return sections
+
+
 def parse_date_from_text(text: str) -> Optional[date]:
     match = re.search(
         r"\b(\d{1,2})(?:st|nd|rd|th)?\s+([A-Za-z]+),?\s+(\d{4})",
@@ -863,6 +928,10 @@ def replace_article(cur, document_id: int, title: str, payload: Dict[str, Any]) 
 
 def replace_act(cur, document_id: int, payload: Dict[str, Any]) -> None:
     sections = extract_sections(payload)
+    if not sections:
+        pages = extract_pages(payload)
+        if pages:
+            sections = derive_act_sections_from_pages(pages)
     if not sections:
         pages = extract_pages(payload)
         if pages:

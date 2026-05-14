@@ -37,6 +37,8 @@ class RetrievedDocument:
     relevant_sections: List[str] = field(default_factory=list)
     full_text_preview: str = ""
     stats: Dict = field(default_factory=dict)
+    relative_path: str = ""
+    source_file: str = ""
 
     def to_dict(self) -> Dict:
         return {
@@ -55,7 +57,9 @@ class RetrievedDocument:
             'legal_principles': self.legal_principles,
             'relevant_sections': self.relevant_sections,
             'full_text_preview': self.full_text_preview,
-            'stats': self.stats
+            'stats': self.stats,
+            'relative_path': self.relative_path,
+            'source_file': self.source_file
         }
 
 class LegalPropertyRAG:
@@ -241,6 +245,7 @@ class LegalPropertyRAG:
             preview = raw_text[:500] + "..." if len(raw_text) > 500 else raw_text
 
             meta = record.get('metadata', {})
+            locations = record.get('locations', {}) if isinstance(record.get('locations'), dict) else {}
             self.document_metadata.append({
                 'id': record['id'],
                 'title': record.get('title', ''),
@@ -257,7 +262,9 @@ class LegalPropertyRAG:
                 'legal_principles': legal_principles,
                 'relevant_sections': sections,
                 'full_text_preview': preview,
-                'raw_text': raw_text
+                'raw_text': raw_text,
+                'relative_path': locations.get('relative_path', ''),
+                'source_file': locations.get('source_file', '')
             })
 
     def _build_index(self):
@@ -309,7 +316,9 @@ class LegalPropertyRAG:
                 legal_principles=meta['legal_principles'],
                 relevant_sections=meta['relevant_sections'],
                 full_text_preview=meta['full_text_preview'],
-                stats=meta['stats']
+                stats=meta['stats'],
+                relative_path=meta.get('relative_path', ''),
+                source_file=meta.get('source_file', '')
             )
             results.append(doc)
         return results
@@ -384,10 +393,14 @@ def main():
     print(f"Loaded {len(records)} documents")
 
     # Example user scenario
-    scenario = """I bought a small plot of land two years ago after checking the sale deed 
-    and paying the full amount. Recently, when I started construction, my neighbor claimed 
-    that part of the land actually belongs to him according to older boundary records. 
-    Now both of us have different documents showing different measurements."""
+    scenario = input("Describe your property rights scenario: ").strip()
+    if not scenario:
+        scenario = (
+            "I bought a small plot of land two years ago after checking the sale deed "
+            "and paying the full amount. Recently, when I started construction, my neighbor "
+            "claimed that part of the land actually belongs to him according to older boundary "
+            "records. Now both of us have different documents showing different measurements."
+        )
 
     # Query
     results = rag.query(scenario, top_k=5)

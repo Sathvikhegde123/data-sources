@@ -1,14 +1,21 @@
+import json
 import os
 from pathlib import Path
+from functools import lru_cache
 from typing import Any, Dict, List, Optional
 
 import psycopg2
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel, Field
 from psycopg2.extras import RealDictCursor
+
+from legal_property_rag_pipeline.legal_property_rag import LegalPropertyRAG
 
 BASE_DIR = Path(__file__).resolve().parents[1]
 ENV_PATH = BASE_DIR / ".env"
+RAG_MANIFEST_PATH = BASE_DIR / "legal_property_rag_pipeline" / "property_rights_rag_manifest.json"
+PARSED_JSON_BASE = BASE_DIR / "parsed_json_new" / "property_rights"
 
 
 def load_env(path: Path) -> None:
@@ -71,6 +78,47 @@ def normalize_json_fields(payload: Dict[str, Any], keys: List[str]) -> Dict[str,
     return payload
 
 
+def load_rag_records() -> List[Dict[str, Any]]:
+    if not RAG_MANIFEST_PATH.exists():
+        raise FileNotFoundError("RAG manifest not found")
+    manifest = json.loads(RAG_MANIFEST_PATH.read_text(encoding="utf-8"))
+    records = manifest.get("records", [])
+    if not isinstance(records, list):
+        raise ValueError("RAG manifest records are invalid")
+    return records
+
+
+@lru_cache(maxsize=1)
+def get_rag_record_map() -> Dict[str, Dict[str, Any]]:
+    records = load_rag_records()
+    record_map: Dict[str, Dict[str, Any]] = {}
+    for record in records:
+        record_id = record.get("id")
+        if record_id:
+            record_map[str(record_id)] = record
+    return record_map
+
+
+def resolve_parsed_json_path(relative_path: str) -> Path:
+    base = PARSED_JSON_BASE.resolve()
+    target = (base / relative_path).resolve()
+    if base != target and base not in target.parents:
+        raise HTTPException(status_code=400, detail="Invalid RAG path")
+    return target
+
+
+@lru_cache(maxsize=1)
+def get_rag() -> LegalPropertyRAG:
+    records = load_rag_records()
+    return LegalPropertyRAG(records)
+
+
+class RagRequest(BaseModel):
+    query: str = Field(..., min_length=3, max_length=4000)
+    top_k: int = Field(5, ge=1, le=20)
+    doc_type_filter: Optional[str] = None
+
+
 load_env(ENV_PATH)
 app = FastAPI(title="Property Rights API")
 
@@ -86,6 +134,55 @@ app.add_middleware(
 @app.get("/api/health")
 def health() -> Dict[str, str]:
     return {"status": "ok"}
+
+
+@app.post("/api/rag")
+def rag_search(payload: RagRequest) -> Dict[str, Any]:
+    query_text = payload.query.strip()
+    if not query_text:
+        raise HTTPException(status_code=400, detail="Query cannot be empty")
+
+    try:
+        rag = get_rag()
+    except FileNotFoundError:
+        raise HTTPException(status_code=500, detail="RAG manifest not found")
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail="Failed to load RAG pipeline") from exc
+
+    results = rag.query(
+        query_text,
+        top_k=payload.top_k,
+        doc_type_filter=payload.doc_type_filter,
+    )
+
+    return {
+        "query": query_text,
+        "top_k": payload.top_k,
+        "doc_type_filter": payload.doc_type_filter,
+        "results": [doc.to_dict() for doc in results],
+    }
+
+
+@app.get("/api/rag/records/{record_id}")
+def rag_record_detail(record_id: str) -> Dict[str, Any]:
+    record = get_rag_record_map().get(record_id)
+    if not record:
+        raise HTTPException(status_code=404, detail="RAG record not found")
+
+    locations = record.get("locations", {}) if isinstance(record.get("locations"), dict) else {}
+    relative_path = locations.get("relative_path")
+    if not relative_path:
+        raise HTTPException(status_code=404, detail="RAG record missing file path")
+
+    file_path = resolve_parsed_json_path(relative_path)
+    if not file_path.exists():
+        raise HTTPException(status_code=404, detail="Parsed JSON file not found")
+
+    parsed_json = json.loads(file_path.read_text(encoding="utf-8"))
+    return {
+        "record": record,
+        "parsed_json": parsed_json,
+    }
 
 
 @app.get("/api/cases")
