@@ -128,7 +128,7 @@ pip install -r requirements.txt
 ### 2. Verify .env Configuration
 Your `.env` file already has:
 ```
-GEMINI_API_KEY=AIzaSyBI23d6IDpIqlxQyZ4ysctKZPTS4zGjgKQ
+GEMINI_API_KEY
 ```
 
 ### 3. Run the Application
