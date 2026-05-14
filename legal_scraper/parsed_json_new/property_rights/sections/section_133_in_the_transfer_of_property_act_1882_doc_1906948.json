@@ -1,0 +1,82 @@
+{
+  "document": {
+    "doc_key": "section_133_in_the_transfer_of_property_act_1882_doc_1906948",
+    "document_type": "act",
+    "title": "Section 133 in The Transfer Of Property Act, 1882",
+    "source_file": "C:\\Users\\sathv\\OneDrive\\Documents\\data-sources\\legal_scraper\\raw_html\\property_rights\\section_133_in_the_transfer_of_property_act_1882_doc_1906948.html"
+  },
+  "raw_text": "Section 133 in The Transfer Of Property Act, 1882\n\nsource\n\nUnion of India - Section\n\n133. Warranty of solvency of debtor.—\n\nWhere the transferor of a debt warrants the solvency of the debtor, the warranty, in the absence of a contract to the contrary, applies only to his solvency at the time of the transfer, and is limited, where the transfer is made for consideration, to the amount or value of such consideration.",
+  "structured_data": {
+    "article_metadata": {},
+    "article_amendments": [],
+    "article_related_cases": [],
+    "article_keywords": [],
+    "act_metadata": {},
+    "act_sections": [],
+    "act_keywords": [],
+    "section_metadata": {},
+    "case_metadata": {
+      "citation": "Section 133 in The Transfer Of Property Act, 1882",
+      "court": "",
+      "date_of_judgment": "",
+      "jurisdiction": "",
+      "dispute_summary": "",
+      "procedural_history": "",
+      "court_reasoning": "",
+      "verdict_order": "",
+      "plain_english_translation": "",
+      "winner_role": "",
+      "original_text": "Section 133 in The Transfer Of Property Act, 1882\n\nsource\n\nUnion of India - Section\n\n133. Warranty of solvency of debtor.—\n\nWhere the transferor of a debt warrants the solvency of the debtor, the warranty, in the absence of a contract to the contrary, applies only to his solvency at the time of the transfer, and is limited, where the transfer is made for consideration, to the amount or value of such consideration."
+    },
+    "case_judges": [],
+    "case_parties": [],
+    "case_arguments": [],
+    "case_timeline": [],
+    "case_keywords": [],
+    "case_related_acts": [],
+    "case_related_sections": [],
+    "reasoning": [],
+    "important_facts": [],
+    "citations": [
+      "0",
+      "29",
+      "Entire Act"
+    ],
+    "verdicts": []
+  },
+  "preserved_original_json": {
+    "source_file": "C:\\Users\\sathv\\OneDrive\\Documents\\data-sources\\legal_scraper\\raw_html\\property_rights\\section_133_in_the_transfer_of_property_act_1882_doc_1906948.html",
+    "document_type": "html",
+    "title": "Section 133 in The Transfer Of Property Act, 1882",
+    "sections": [
+      {
+        "heading": "source",
+        "level": 1,
+        "content": [
+          "Union of India - Section"
+        ]
+      },
+      {
+        "heading": "133. Warranty of solvency of debtor.—",
+        "level": 2,
+        "content": [
+          "Where the transferor of a debt warrants the solvency of the debtor, the warranty, in the absence of a contract to the contrary, applies only to his solvency at the time of the transfer, and is limited, where the transfer is made for consideration, to the amount or value of such consideration."
+        ]
+      }
+    ],
+    "links": [
+      {
+        "href": "/search/?formInput=cites:1906948",
+        "text": "0"
+      },
+      {
+        "href": "/search/?formInput=citedby:1906948",
+        "text": "29"
+      },
+      {
+        "href": "/doc/515323/",
+        "text": "Entire Act"
+      }
+    ]
+  }
+}

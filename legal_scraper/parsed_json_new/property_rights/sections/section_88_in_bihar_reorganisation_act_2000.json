@@ -1,0 +1,82 @@
+{
+  "document": {
+    "doc_key": "section_88_in_bihar_reorganisation_act_2000",
+    "document_type": "act",
+    "title": "Section 88 in Bihar Reorganisation Act, 2000",
+    "source_file": "C:\\Users\\sathv\\OneDrive\\Documents\\data-sources\\legal_scraper\\raw_html\\property_rights\\section_88_in_bihar_reorganisation_act_2000.html"
+  },
+  "raw_text": "Section 88 in Bihar Reorganisation Act, 2000\n\nsource\n\nUnion of India - Section\n\n88. Legal proceedings.\n\n- Where immediately before the appointed day, the existing State of Bihar is a Party to any legal proceeding with respect to any property, rights or liabilities subject to apportionment between the States of Bihar and Jharkhand under this Act, the State of Bihar or Jharkhand which succeeds to, or acquires a share in, that property or those rights or liabilities by virtue of any provision of this Act shall be deemed to be substituted for the existing State of Bihar or added as a Party to those proceedings, and the proceedings may continue accordingly.",
+  "structured_data": {
+    "article_metadata": {},
+    "article_amendments": [],
+    "article_related_cases": [],
+    "article_keywords": [],
+    "act_metadata": {},
+    "act_sections": [],
+    "act_keywords": [],
+    "section_metadata": {},
+    "case_metadata": {
+      "citation": "Section 88 in Bihar Reorganisation Act, 2000",
+      "court": "",
+      "date_of_judgment": "2000",
+      "jurisdiction": "",
+      "dispute_summary": "",
+      "procedural_history": "",
+      "court_reasoning": "",
+      "verdict_order": "",
+      "plain_english_translation": "",
+      "winner_role": "",
+      "original_text": "Section 88 in Bihar Reorganisation Act, 2000\n\nsource\n\nUnion of India - Section\n\n88. Legal proceedings.\n\n- Where immediately before the appointed day, the existing State of Bihar is a Party to any legal proceeding with respect to any property, rights or liabilities subject to apportionment between the States of Bihar and Jharkhand under this Act, the State of Bihar or Jharkhand which succeeds to, or acquires a share in, that property or those rights or liabilities by virtue of any provision of this Act shall be deemed to be substituted for the existing State of Bihar or added as a Party to those proceedings, and the proceedings may continue accordingly."
+    },
+    "case_judges": [],
+    "case_parties": [],
+    "case_arguments": [],
+    "case_timeline": [],
+    "case_keywords": [],
+    "case_related_acts": [],
+    "case_related_sections": [],
+    "reasoning": [],
+    "important_facts": [],
+    "citations": [
+      "0",
+      "17",
+      "Entire Act"
+    ],
+    "verdicts": []
+  },
+  "preserved_original_json": {
+    "source_file": "C:\\Users\\sathv\\OneDrive\\Documents\\data-sources\\legal_scraper\\raw_html\\property_rights\\section_88_in_bihar_reorganisation_act_2000.html",
+    "document_type": "html",
+    "title": "Section 88 in Bihar Reorganisation Act, 2000",
+    "sections": [
+      {
+        "heading": "source",
+        "level": 1,
+        "content": [
+          "Union of India - Section"
+        ]
+      },
+      {
+        "heading": "88. Legal proceedings.",
+        "level": 2,
+        "content": [
+          "- Where immediately before the appointed day, the existing State of Bihar is a Party to any legal proceeding with respect to any property, rights or liabilities subject to apportionment between the States of Bihar and Jharkhand under this Act, the State of Bihar or Jharkhand which succeeds to, or acquires a share in, that property or those rights or liabilities by virtue of any provision of this Act shall be deemed to be substituted for the existing State of Bihar or added as a Party to those proceedings, and the proceedings may continue accordingly."
+        ]
+      }
+    ],
+    "links": [
+      {
+        "href": "/search/?formInput=cites:569629",
+        "text": "0"
+      },
+      {
+        "href": "/search/?formInput=citedby:569629",
+        "text": "17"
+      },
+      {
+        "href": "/doc/1054471/",
+        "text": "Entire Act"
+      }
+    ]
+  }
+}

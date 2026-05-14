@@ -1,0 +1,82 @@
+{
+  "document": {
+    "doc_key": "section_27_in_the_limitation_act_1963_doc_1223371",
+    "document_type": "act",
+    "title": "Section 27 in The Limitation Act, 1963",
+    "source_file": "C:\\Users\\sathv\\OneDrive\\Documents\\data-sources\\legal_scraper\\raw_html\\property_rights\\section_27_in_the_limitation_act_1963_doc_1223371.html"
+  },
+  "raw_text": "Section 27 in The Limitation Act, 1963\n\nsource\n\nUnion of India - Section\n\n27. Extinguishment of right to property.—\n\nAt the determination of the period hereby limited to any person for instituting a suit for possession of any property, his right to such property shall be extinguished.",
+  "structured_data": {
+    "article_metadata": {},
+    "article_amendments": [],
+    "article_related_cases": [],
+    "article_keywords": [],
+    "act_metadata": {},
+    "act_sections": [],
+    "act_keywords": [],
+    "section_metadata": {},
+    "case_metadata": {
+      "citation": "Section 27 in The Limitation Act, 1963",
+      "court": "",
+      "date_of_judgment": "1963",
+      "jurisdiction": "",
+      "dispute_summary": "",
+      "procedural_history": "",
+      "court_reasoning": "",
+      "verdict_order": "",
+      "plain_english_translation": "",
+      "winner_role": "",
+      "original_text": "Section 27 in The Limitation Act, 1963\n\nsource\n\nUnion of India - Section\n\n27. Extinguishment of right to property.—\n\nAt the determination of the period hereby limited to any person for instituting a suit for possession of any property, his right to such property shall be extinguished."
+    },
+    "case_judges": [],
+    "case_parties": [],
+    "case_arguments": [],
+    "case_timeline": [],
+    "case_keywords": [],
+    "case_related_acts": [],
+    "case_related_sections": [],
+    "reasoning": [],
+    "important_facts": [],
+    "citations": [
+      "0",
+      "999",
+      "Entire Act"
+    ],
+    "verdicts": []
+  },
+  "preserved_original_json": {
+    "source_file": "C:\\Users\\sathv\\OneDrive\\Documents\\data-sources\\legal_scraper\\raw_html\\property_rights\\section_27_in_the_limitation_act_1963_doc_1223371.html",
+    "document_type": "html",
+    "title": "Section 27 in The Limitation Act, 1963",
+    "sections": [
+      {
+        "heading": "source",
+        "level": 1,
+        "content": [
+          "Union of India - Section"
+        ]
+      },
+      {
+        "heading": "27. Extinguishment of right to property.—",
+        "level": 2,
+        "content": [
+          "At the determination of the period hereby limited to any person for instituting a suit for possession of any property, his right to such property shall be extinguished."
+        ]
+      }
+    ],
+    "links": [
+      {
+        "href": "/search/?formInput=cites:1223371",
+        "text": "0"
+      },
+      {
+        "href": "/search/?formInput=citedby:1223371",
+        "text": "999"
+      },
+      {
+        "href": "/doc/1317393/",
+        "text": "Entire Act"
+      }
+    ]
+  }
+}

@@ -1,40 +1,18 @@
 import os
 import json
-import time
+import re
 from pathlib import Path
-from typing import List, Dict, Any
-
-from dotenv import load_dotenv
-from google import genai
+from typing import Dict, Any
 
 # =========================================================
 # CONFIG
 # =========================================================
 
 INPUT_DIR = Path("parsed_json/property_rights")
-OUTPUT_DIR = Path("parsed_json_new")
-
-MODEL_NAME = "gemini-2.5-flash"
-
-BATCH_SIZE = 5
-
-MAX_RETRIES = 5
+OUTPUT_DIR = Path("parsed_json_new/property_rights")
 
 # =========================================================
-# LOAD ENV
-# =========================================================
-
-load_dotenv()
-
-API_KEY = os.getenv("GEMINI_API_KEY")
-
-if not API_KEY:
-    raise ValueError("GEMINI_API_KEY missing")
-
-client = genai.Client(api_key=API_KEY)
-
-# =========================================================
-# REQUIRED OUTPUT SCHEMA
+# REQUIRED OUTPUT SCHEMA (minimal defaults)
 # =========================================================
 
 REQUIRED_SCHEMA = {
@@ -48,7 +26,6 @@ REQUIRED_SCHEMA = {
     "raw_text": "",
 
     "structured_data": {
-
         "article_metadata": {},
         "article_amendments": [],
         "article_related_cases": [],
@@ -60,7 +37,19 @@ REQUIRED_SCHEMA = {
 
         "section_metadata": {},
 
-        "case_metadata": {},
+        "case_metadata": {
+            "citation": "",
+            "court": "",
+            "date_of_judgment": "",
+            "jurisdiction": "",
+            "dispute_summary": "",
+            "procedural_history": "",
+            "court_reasoning": "",
+            "verdict_order": "",
+            "plain_english_translation": "",
+            "winner_role": "",
+            "original_text": ""
+        },
         "case_judges": [],
         "case_parties": [],
         "case_arguments": [],
@@ -78,91 +67,8 @@ REQUIRED_SCHEMA = {
     "preserved_original_json": {}
 }
 
-# =========================================================
-# SYSTEM PROMPT
-# =========================================================
 
-SYSTEM_PROMPT = """
-You are an advanced Indian legal document extraction engine.
-
-Your task:
-- Read legal JSON documents carefully
-- Extract ALL legally relevant information
-- Preserve legal meaning exactly
-- Preserve citations, sections, acts, judges, reasoning, timelines
-- Maximize recall
-- NEVER omit useful information
-
-CRITICAL RULES:
-- Return VALID JSON ONLY
-- Maintain exact schema
-- Fill ALL fields
-- Use [] for missing arrays
-- Use {} for missing objects
-- Use "" for missing strings
-- Never hallucinate
-- Never add markdown
-- Never explain output
-"""
-
-# =========================================================
-# HELPERS
-# =========================================================
-
-def ensure_schema(data, schema):
-    """
-    recursively fills missing fields
-    """
-
-    if isinstance(schema, dict):
-
-        if not isinstance(data, dict):
-            data = {}
-
-        result = {}
-
-        for key, value in schema.items():
-
-            result[key] = ensure_schema(
-                data.get(key),
-                value
-            )
-
-        return result
-
-    elif isinstance(schema, list):
-
-        if not isinstance(data, list):
-            return []
-
-        return data
-
-    elif isinstance(schema, str):
-
-        if data is None:
-            return ""
-
-        return str(data)
-
-    return data
-
-
-def clean_json_response(text: str):
-
-    text = text.strip()
-
-    if text.startswith("```"):
-
-        text = text.split("```")[1]
-
-        if text.startswith("json"):
-            text = text[4:]
-
-    return text.strip()
-
-
-def detect_document_type(path_str):
-
+def detect_document_type(path_str: str) -> str:
     path_lower = path_str.lower()
 
     if "case" in path_lower:
@@ -180,211 +86,149 @@ def detect_document_type(path_str):
     return "unknown"
 
 
-# =========================================================
-# LLM CALL
-# =========================================================
+def extract_raw_text(original: Dict[str, Any]) -> str:
+    parts = []
 
-def call_gemini(batch_payload):
+    # include title
+    title = original.get("title")
+    if title:
+        parts.append(title)
 
-    prompt = f"""
-REQUIRED OUTPUT SCHEMA:
+    for sec in original.get("sections", []):
+        heading = sec.get("heading") or ""
+        if heading:
+            parts.append(heading)
 
-{json.dumps(REQUIRED_SCHEMA, indent=2, ensure_ascii=False)}
+        for c in sec.get("content", []):
+            if isinstance(c, str) and c.strip():
+                parts.append(c.strip())
 
-INPUT DOCUMENTS:
+    # fall back to any top-level text fields
+    for key in ["text", "body", "content"]:
+        if original.get(key):
+            if isinstance(original[key], str):
+                parts.append(original[key])
 
-{json.dumps(batch_payload, ensure_ascii=False)}
-
-TASK:
-For EACH document:
-- extract all legal information
-- fill all schema fields
-- preserve original json
-- preserve raw text
-- preserve legal reasoning
-- preserve all sections and citations
-
-Return STRICTLY this format:
-
-[
-  {{
-    "document": {{}},
-    "raw_text": "",
-    "structured_data": {{}},
-    "preserved_original_json": {{}}
-  }}
-]
-"""
-
-    for attempt in range(MAX_RETRIES):
-
-        try:
-
-            response = client.models.generate_content(
-                model=MODEL_NAME,
-                contents=[
-                    {
-                        "role": "user",
-                        "parts": [
-                            {
-                                "text": SYSTEM_PROMPT + "\n\n" + prompt
-                            }
-                        ]
-                    }
-                ]
-            )
-
-            text = clean_json_response(response.text)
-
-            parsed = json.loads(text)
-
-            validated = []
-
-            for item in parsed:
-
-                validated.append(
-                    ensure_schema(item, REQUIRED_SCHEMA)
-                )
-
-            return validated
-
-        except Exception as e:
-
-            print(f"Retry {attempt+1} failed")
-            print(e)
-
-            time.sleep(3)
-
-    raise Exception("Gemini failed after retries")
+    return "\n\n".join(parts).strip()
 
 
-# =========================================================
-# LOAD FILES
-# =========================================================
+def find_section_by_heading(original: Dict[str, Any], needle: str):
+    needle_lower = needle.lower()
+    for sec in original.get("sections", []):
+        heading = (sec.get("heading") or "").lower()
+        if needle_lower in heading:
+            return sec
+    return None
 
-def load_json_files():
+
+def extract_date_from_title(title: str) -> str:
+    if not title:
+        return ""
+
+    # patterns like 'on 27 March, 1992' or 'on 27 March 1992' or '27 March, 1992'
+    m = re.search(r"(\d{1,2}\s+\w+\s*,?\s*\d{4})", title)
+    if m:
+        return m.group(1)
+
+    # patterns like '1992' fallback
+    m2 = re.search(r"\b(19|20)\d{2}\b", title)
+    if m2:
+        return m2.group(0)
+
+    return ""
+
+
+def extract_citations(original: Dict[str, Any]):
+    citations = []
+    for link in original.get("links", []):
+        href = link.get("href") or ""
+        text = link.get("text") or ""
+        if "/doc/" in href or text:
+            citations.append(text or href)
+    return citations
+
+
+def transform(original: Dict[str, Any], source_path: str) -> Dict[str, Any]:
+    out = json.loads(json.dumps(REQUIRED_SCHEMA))  # deep copy defaults
+
+    name = Path(source_path).stem
+
+    out["document"]["doc_key"] = name
+    out["document"]["document_type"] = detect_document_type(source_path)
+    out["document"]["title"] = original.get("title", "")
+    out["document"]["source_file"] = original.get("source_file", source_path)
+
+    raw_text = extract_raw_text(original)
+    out["raw_text"] = raw_text
+
+    # case metadata
+    cm = out["structured_data"]["case_metadata"]
+    # citation
+    eq = find_section_by_heading(original, "equivalent citations")
+    if eq:
+        cm["citation"] = "\n\n".join(eq.get("content", []))[:1000]
+    else:
+        cm["citation"] = original.get("title", "")
+
+    # court
+    court = None
+    for sec in original.get("sections", []):
+        h = sec.get("heading") or ""
+        if "high court" in h.lower() or "supreme court" in h.lower() or "court" in h.lower():
+            court = h
+            break
+    cm["court"] = court or ""
+
+    cm["date_of_judgment"] = extract_date_from_title(original.get("title", ""))
+
+    # put raw_text into original_text
+    cm["original_text"] = raw_text[:100000]
+
+    # keywords - try Top AI Tags or Related user Queries
+    tags_sec = find_section_by_heading(original, "Top AI Tags") or find_section_by_heading(original, "Related user Queries")
+    if tags_sec:
+        keywords = []
+        for it in tags_sec.get("content", []):
+            if isinstance(it, str) and it.strip():
+                # split CSV-like lists
+                for part in re.split(r"[,;\n]", it):
+                    p = part.strip()
+                    if p:
+                        keywords.append(p)
+        out["structured_data"]["case_keywords"] = keywords
+
+    out["structured_data"]["citations"] = extract_citations(original)
+
+    out["preserved_original_json"] = original
+
+    return out
+
+
+def process_all():
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
     json_files = list(INPUT_DIR.rglob("*.json"))
 
-    loaded = []
+    print(f"FOUND {len(json_files)} files to transform")
 
-    for file_path in json_files:
-
+    for p in json_files:
         try:
-
-            with open(file_path, "r", encoding="utf-8") as f:
-
+            with open(p, "r", encoding="utf-8") as f:
                 data = json.load(f)
 
-            loaded.append({
-                "source_file": str(file_path),
-                "document_type": detect_document_type(str(file_path)),
-                "json_data": data
-            })
+            transformed = transform(data, str(p))
+
+            rel_path = p.relative_to(INPUT_DIR)
+            out_path = OUTPUT_DIR / rel_path
+            out_path.parent.mkdir(parents=True, exist_ok=True)
+            with open(out_path, "w", encoding="utf-8") as f:
+                json.dump(transformed, f, ensure_ascii=False, indent=2)
+
+            print(f"WROTE -> {out_path}")
 
         except Exception as e:
+            print(f"FAILED {p}: {e}")
 
-            print(f"Failed loading {file_path}")
-            print(e)
-
-    return loaded
-
-
-# =========================================================
-# BATCHING
-# =========================================================
-
-def create_batches(items, batch_size):
-
-    batches = []
-
-    for i in range(0, len(items), batch_size):
-
-        batches.append(
-            items[i:i + batch_size]
-        )
-
-    return batches
-
-
-# =========================================================
-# SAVE OUTPUTS
-# =========================================================
-
-def save_batch_outputs(outputs):
-
-    for item in outputs:
-
-        source_file = item["document"]["source_file"]
-
-        if not source_file:
-            continue
-
-        relative = Path(source_file).name
-
-        output_path = OUTPUT_DIR / relative
-
-        output_path.parent.mkdir(
-            parents=True,
-            exist_ok=True
-        )
-
-        with open(output_path, "w", encoding="utf-8") as f:
-
-            json.dump(
-                item,
-                f,
-                ensure_ascii=False,
-                indent=2
-            )
-
-        print(f"SAVED -> {output_path}")
-
-
-# =========================================================
-# MAIN PIPELINE
-# =========================================================
-
-def main():
-
-    OUTPUT_DIR.mkdir(
-        parents=True,
-        exist_ok=True
-    )
-
-    documents = load_json_files()
-
-    print(f"TOTAL DOCUMENTS: {len(documents)}")
-
-    batches = create_batches(
-        documents,
-        BATCH_SIZE
-    )
-
-    print(f"TOTAL BATCHES: {len(batches)}")
-
-    for batch_index, batch in enumerate(batches):
-
-        print("=" * 70)
-        print(f"BATCH {batch_index+1}/{len(batches)}")
-
-        try:
-
-            outputs = call_gemini(batch)
-
-            save_batch_outputs(outputs)
-
-        except Exception as e:
-
-            print(f"BATCH FAILED: {batch_index+1}")
-            print(e)
-
-    print("\nDONE")
-
-
-# =========================================================
-# ENTRY
-# =========================================================
 
 if __name__ == "__main__":
-    main()
+    process_all()

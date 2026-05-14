@@ -8,7 +8,7 @@ from typing import Any, Dict, Iterable, List, Optional, Tuple
 import psycopg2
 
 BASE_DIR = Path(__file__).resolve().parent
-PROPERTY_RIGHTS_DIR = BASE_DIR / "parsed_json" / "property_rights"
+PROPERTY_RIGHTS_DIR = BASE_DIR / "parsed_json_new" / "property_rights"
 SCHEMA_PATH = BASE_DIR / "db" / "schema_property_rights.sql"
 ENV_PATH = BASE_DIR / ".env"
 
@@ -154,7 +154,15 @@ def ensure_schema(conn) -> None:
 def iter_json_files() -> Iterable[Path]:
     if not PROPERTY_RIGHTS_DIR.exists():
         raise FileNotFoundError(f"Property rights folder not found: {PROPERTY_RIGHTS_DIR}")
-    return sorted(PROPERTY_RIGHTS_DIR.rglob("*.json"))
+    new_cases_dir = PROPERTY_RIGHTS_DIR / "new_cases"
+    use_new_cases = new_cases_dir.exists()
+    json_paths: List[Path] = []
+    for path in PROPERTY_RIGHTS_DIR.rglob("*.json"):
+        rel_path = path.relative_to(PROPERTY_RIGHTS_DIR)
+        if use_new_cases and rel_path.parts and rel_path.parts[0] == "cases":
+            continue
+        json_paths.append(path)
+    return sorted(json_paths)
 
 
 def load_json(path: Path) -> Dict[str, Any]:
@@ -206,10 +214,17 @@ def detect_document_type(rel_path: Path, title: str) -> str:
 
 
 def extract_sections(payload: Dict[str, Any]) -> List[Dict[str, Any]]:
+    # Support payloads that have been transformed and wrapped the original
+    # JSON under the key `preserved_original_json`. In that case, unwrap
+    # and return the original `sections` if present.
+    if isinstance(payload, dict) and "preserved_original_json" in payload:
+        payload = payload.get("preserved_original_json") or {}
     return payload.get("sections") or []
 
 
 def extract_pages(payload: Dict[str, Any]) -> List[Dict[str, Any]]:
+    if isinstance(payload, dict) and "preserved_original_json" in payload:
+        payload = payload.get("preserved_original_json") or {}
     return payload.get("extracted_pages") or []
 
 
@@ -474,6 +489,18 @@ def strip_page_markers(text: str) -> str:
     return normalize_whitespace(text)
 
 
+def clamp_text_at_word(text: str, limit: int) -> str:
+    if not text:
+        return ""
+    if len(text) <= limit:
+        return text
+    slice_text = text[:limit]
+    last_space = slice_text.rfind(" ")
+    if last_space > 20:
+        slice_text = slice_text[:last_space]
+    return slice_text.strip()
+
+
 def join_case_lines(lines: List[str], max_chars: int = 1800) -> Optional[str]:
     cleaned = [strip_page_markers(line) for line in lines if strip_page_markers(line)]
     if not cleaned:
@@ -691,7 +718,7 @@ def extract_case_timeline(lines: List[str]) -> List[Tuple[Optional[date], str]]:
         if not event or event in seen:
             continue
         seen.add(event)
-        events.append((event_date, event[:500]))
+        events.append((event_date, clamp_text_at_word(event, 2000)))
         if len(events) >= 12:
             break
     return events
@@ -707,7 +734,7 @@ def extract_case_arguments(lines: List[str]) -> List[Tuple[str, str]]:
             party_role = "defendant_respondent"
         else:
             party_role = "plaintiff_appellant"
-        arguments.append((party_role, strip_page_markers(line)[:700]))
+        arguments.append((party_role, clamp_text_at_word(strip_page_markers(line), 2000)))
         if len(arguments) >= 12:
             break
     return arguments
@@ -836,6 +863,25 @@ def replace_article(cur, document_id: int, title: str, payload: Dict[str, Any]) 
 
 def replace_act(cur, document_id: int, payload: Dict[str, Any]) -> None:
     sections = extract_sections(payload)
+    if not sections:
+        pages = extract_pages(payload)
+        if pages:
+            page_sections = []
+            for index, page in enumerate(pages):
+                page_text = page.get("text") or ""
+                if not page_text:
+                    continue
+                lines = [line for line in page_text.splitlines() if line.strip()]
+                content = lines or [page_text]
+                page_sections.append(
+                    {
+                        "heading": f"Page {index + 1}",
+                        "level": 0,
+                        "content": content,
+                    }
+                )
+            if page_sections:
+                sections = page_sections
     objective = extract_objective(sections)
     extent_application = extract_extent(sections)
     original_text = extract_text(payload) or None
@@ -1078,8 +1124,23 @@ def load_all() -> Tuple[int, int, int, int, int]:
         ensure_schema(conn)
         for json_path in iter_json_files():
             rel_path = json_path.relative_to(PROPERTY_RIGHTS_DIR)
+            if rel_path.parts and rel_path.parts[0] == "new_cases":
+                rel_path = Path("cases", *rel_path.parts[1:])
             payload = load_json(json_path)
-            raw_title = payload.get("title") or json_path.stem
+            # Prefer an explicit title in the payload. Some files wrap the original
+            # document under a `document` key or `preserved_original_json` — prefer
+            # those before falling back to the filename stem.
+            raw_title = payload.get("title")
+            if not raw_title:
+                doc_obj = None
+                if isinstance(payload.get("document"), dict):
+                    doc_obj = payload.get("document")
+                elif isinstance(payload.get("preserved_original_json"), dict):
+                    doc_obj = payload.get("preserved_original_json")
+                if doc_obj:
+                    raw_title = doc_obj.get("title")
+            if not raw_title:
+                raw_title = json_path.stem
             title = normalize_whitespace(str(raw_title)).lstrip("\ufeff")
             doc_type = detect_document_type(rel_path, title)
             source_file = payload.get("source_file")

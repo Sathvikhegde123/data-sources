@@ -1,4 +1,5 @@
 const filters = [
+  { id: "all", label: "All" },
   { id: "article", label: "Articles" },
   { id: "act", label: "Acts" },
   { id: "case", label: "Cases" }

@@ -6,11 +6,26 @@ const typeMap = {
   article: "articles"
 };
 
+function truncateAtWord(value, limit) {
+  if (!value) {
+    return "";
+  }
+  if (value.length <= limit) {
+    return value;
+  }
+  const slice = value.slice(0, limit);
+  const lastSpace = slice.lastIndexOf(" ");
+  if (lastSpace > 20) {
+    return slice.slice(0, lastSpace);
+  }
+  return slice;
+}
+
 function ExpandableText({ text, fallback, limit = 140 }) {
   const [expanded, setExpanded] = useState(false);
   const value = text || fallback;
   const canExpand = value && value.length > limit;
-  const visibleText = canExpand && !expanded ? `${value.slice(0, limit).trim()}...` : value;
+  const visibleText = canExpand && !expanded ? `${truncateAtWord(value, limit).trim()}...` : value;
 
   return (
     <div className="expandable-text">
@@ -50,6 +65,9 @@ function KeywordList({ keywords }) {
 export default function DetailDrawer({ selection, onClose, apiBase }) {
   const [detail, setDetail] = useState(null);
   const [status, setStatus] = useState("idle");
+  const caseSections = detail?.original_text
+    ? detail.original_text.split(/\n+/).filter((value) => value.trim().length > 0)
+    : [];
 
   useEffect(() => {
     if (!selection) {
@@ -175,6 +193,21 @@ export default function DetailDrawer({ selection, onClose, apiBase }) {
                     />
                   </article>
                 </div>
+              </section>
+
+              <section>
+                <h3>Sections</h3>
+                {caseSections.length ? (
+                  <div className="section-list">
+                    {caseSections.map((sectionText, index) => (
+                      <article key={`case-section-${index}`}>
+                        <ExpandableText text={sectionText} fallback="Text pending" limit={400} />
+                      </article>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="drawer-muted">Sections not captured yet.</p>
+                )}
               </section>
 
               <section>

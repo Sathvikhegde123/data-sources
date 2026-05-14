@@ -1,0 +1,113 @@
+{
+  "document": {
+    "doc_key": "limitation_act_section_18",
+    "document_type": "act",
+    "title": "Section 18 in The Limitation Act, 1963",
+    "source_file": "C:\\Users\\sathv\\OneDrive\\Documents\\data-sources\\legal_scraper\\raw_html\\property_rights\\limitation_act_section_18.html"
+  },
+  "raw_text": "Section 18 in The Limitation Act, 1963\n\nsource\n\nUnion of India - Section\n\n18. Effect of acknowledgment in writing.—\n\nWhere, before the expiration of the prescribed period for a suit of application in respect of any property or right, an acknowledgment of liability in respect of such property or right has been made in writing signed by the party against whom such property or right is claimed, or by any person through whom he derives his title or liability, a fresh period of limitation shall be computed from the time when the acknowledgment was so signed.\n\nWhere the writing containing the acknowledgment is undated, oral evidence may be given of the time when it was signed; but subject to the provisions of the Indian Evidence Act, 1872 (1 of 1872), oral evidence of its contents shall not be received.\n\nExplanation.—\n\nFor the purposes of this section,—\n\nan acknowledgment may be sufficient though it omits to specify the exact nature of the property or right, or avers that the time for payment, delivery, performance or enjoyment has not yet come or is accompanied by a refusal to pay, deliver, perform or permit to enjoy, or is coupled with a claim to set-off, or is addressed to a person other than a person entitled to the property or right;\n\nthe word “signed” means signed either personally or by an agent duly authorised in this behalf; and\n\nan application for the execution of a decree or order shall not be deemed to be an application in respect of any property or right.",
+  "structured_data": {
+    "article_metadata": {},
+    "article_amendments": [],
+    "article_related_cases": [],
+    "article_keywords": [],
+    "act_metadata": {},
+    "act_sections": [],
+    "act_keywords": [],
+    "section_metadata": {},
+    "case_metadata": {
+      "citation": "Section 18 in The Limitation Act, 1963",
+      "court": "",
+      "date_of_judgment": "1963",
+      "jurisdiction": "",
+      "dispute_summary": "",
+      "procedural_history": "",
+      "court_reasoning": "",
+      "verdict_order": "",
+      "plain_english_translation": "",
+      "winner_role": "",
+      "original_text": "Section 18 in The Limitation Act, 1963\n\nsource\n\nUnion of India - Section\n\n18. Effect of acknowledgment in writing.—\n\nWhere, before the expiration of the prescribed period for a suit of application in respect of any property or right, an acknowledgment of liability in respect of such property or right has been made in writing signed by the party against whom such property or right is claimed, or by any person through whom he derives his title or liability, a fresh period of limitation shall be computed from the time when the acknowledgment was so signed.\n\nWhere the writing containing the acknowledgment is undated, oral evidence may be given of the time when it was signed; but subject to the provisions of the Indian Evidence Act, 1872 (1 of 1872), oral evidence of its contents shall not be received.\n\nExplanation.—\n\nFor the purposes of this section,—\n\nan acknowledgment may be sufficient though it omits to specify the exact nature of the property or right, or avers that the time for payment, delivery, performance or enjoyment has not yet come or is accompanied by a refusal to pay, deliver, perform or permit to enjoy, or is coupled with a claim to set-off, or is addressed to a person other than a person entitled to the property or right;\n\nthe word “signed” means signed either personally or by an agent duly authorised in this behalf; and\n\nan application for the execution of a decree or order shall not be deemed to be an application in respect of any property or right."
+    },
+    "case_judges": [],
+    "case_parties": [],
+    "case_arguments": [],
+    "case_timeline": [],
+    "case_keywords": [],
+    "case_related_acts": [],
+    "case_related_sections": [],
+    "reasoning": [],
+    "important_facts": [],
+    "citations": [
+      "0",
+      "3247",
+      "Entire Act",
+      "(1)",
+      "(2)",
+      "(a)",
+      "(b)",
+      "(c)"
+    ],
+    "verdicts": []
+  },
+  "preserved_original_json": {
+    "source_file": "C:\\Users\\sathv\\OneDrive\\Documents\\data-sources\\legal_scraper\\raw_html\\property_rights\\limitation_act_section_18.html",
+    "document_type": "html",
+    "title": "Section 18 in The Limitation Act, 1963",
+    "sections": [
+      {
+        "heading": "source",
+        "level": 1,
+        "content": [
+          "Union of India - Section"
+        ]
+      },
+      {
+        "heading": "18. Effect of acknowledgment in writing.—",
+        "level": 2,
+        "content": [
+          "Where, before the expiration of the prescribed period for a suit of application in respect of any property or right, an acknowledgment of liability in respect of such property or right has been made in writing signed by the party against whom such property or right is claimed, or by any person through whom he derives his title or liability, a fresh period of limitation shall be computed from the time when the acknowledgment was so signed.",
+          "Where the writing containing the acknowledgment is undated, oral evidence may be given of the time when it was signed; but subject to the provisions of the Indian Evidence Act, 1872 (1 of 1872), oral evidence of its contents shall not be received.",
+          "Explanation.—",
+          "For the purposes of this section,—",
+          "an acknowledgment may be sufficient though it omits to specify the exact nature of the property or right, or avers that the time for payment, delivery, performance or enjoyment has not yet come or is accompanied by a refusal to pay, deliver, perform or permit to enjoy, or is coupled with a claim to set-off, or is addressed to a person other than a person entitled to the property or right;",
+          "the word “signed” means signed either personally or by an agent duly authorised in this behalf; and",
+          "an application for the execution of a decree or order shall not be deemed to be an application in respect of any property or right."
+        ]
+      }
+    ],
+    "links": [
+      {
+        "href": "/search/?formInput=cites:85586",
+        "text": "0"
+      },
+      {
+        "href": "/search/?formInput=citedby:85586",
+        "text": "3247"
+      },
+      {
+        "href": "/doc/1317393/",
+        "text": "Entire Act"
+      },
+      {
+        "href": "/doc/1529784/",
+        "text": "(1)"
+      },
+      {
+        "href": "/doc/1464198/",
+        "text": "(2)"
+      },
+      {
+        "href": "/doc/1571984/",
+        "text": "(a)"
+      },
+      {
+        "href": "/doc/1780577/",
+        "text": "(b)"
+      },
+      {
+        "href": "/doc/272516/",
+        "text": "(c)"
+      }
+    ]
+  }
+}

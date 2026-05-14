@@ -1,0 +1,82 @@
+{
+  "document": {
+    "doc_key": "section_41_in_the_transfer_of_property_act_1882",
+    "document_type": "act",
+    "title": "Section 41 in The Transfer Of Property Act, 1882",
+    "source_file": "C:\\Users\\sathv\\OneDrive\\Documents\\data-sources\\legal_scraper\\raw_html\\property_rights\\section_41_in_the_transfer_of_property_act_1882.html"
+  },
+  "raw_text": "Section 41 in The Transfer Of Property Act, 1882\n\nsource\n\nUnion of India - Section\n\n41. Transfer by ostensible owner.—\n\nWhere, with the consent, express or implied, of the persons interested in immoveable property, a person is the ostensible owner of such property and transfers the same for consideration, the transfer shall not be voidable on the ground that the transferor was not authorised to make it: provided that the transferee, after taking reasonable care to ascertain that the transferor had power to make the transfer, has acted in good faith.",
+  "structured_data": {
+    "article_metadata": {},
+    "article_amendments": [],
+    "article_related_cases": [],
+    "article_keywords": [],
+    "act_metadata": {},
+    "act_sections": [],
+    "act_keywords": [],
+    "section_metadata": {},
+    "case_metadata": {
+      "citation": "Section 41 in The Transfer Of Property Act, 1882",
+      "court": "",
+      "date_of_judgment": "",
+      "jurisdiction": "",
+      "dispute_summary": "",
+      "procedural_history": "",
+      "court_reasoning": "",
+      "verdict_order": "",
+      "plain_english_translation": "",
+      "winner_role": "",
+      "original_text": "Section 41 in The Transfer Of Property Act, 1882\n\nsource\n\nUnion of India - Section\n\n41. Transfer by ostensible owner.—\n\nWhere, with the consent, express or implied, of the persons interested in immoveable property, a person is the ostensible owner of such property and transfers the same for consideration, the transfer shall not be voidable on the ground that the transferor was not authorised to make it: provided that the transferee, after taking reasonable care to ascertain that the transferor had power to make the transfer, has acted in good faith."
+    },
+    "case_judges": [],
+    "case_parties": [],
+    "case_arguments": [],
+    "case_timeline": [],
+    "case_keywords": [],
+    "case_related_acts": [],
+    "case_related_sections": [],
+    "reasoning": [],
+    "important_facts": [],
+    "citations": [
+      "0",
+      "1092",
+      "Entire Act"
+    ],
+    "verdicts": []
+  },
+  "preserved_original_json": {
+    "source_file": "C:\\Users\\sathv\\OneDrive\\Documents\\data-sources\\legal_scraper\\raw_html\\property_rights\\section_41_in_the_transfer_of_property_act_1882.html",
+    "document_type": "html",
+    "title": "Section 41 in The Transfer Of Property Act, 1882",
+    "sections": [
+      {
+        "heading": "source",
+        "level": 1,
+        "content": [
+          "Union of India - Section"
+        ]
+      },
+      {
+        "heading": "41. Transfer by ostensible owner.—",
+        "level": 2,
+        "content": [
+          "Where, with the consent, express or implied, of the persons interested in immoveable property, a person is the ostensible owner of such property and transfers the same for consideration, the transfer shall not be voidable on the ground that the transferor was not authorised to make it: provided that the transferee, after taking reasonable care to ascertain that the transferor had power to make the transfer, has acted in good faith."
+        ]
+      }
+    ],
+    "links": [
+      {
+        "href": "/search/?formInput=cites:584197",
+        "text": "0"
+      },
+      {
+        "href": "/search/?formInput=citedby:584197",
+        "text": "1092"
+      },
+      {
+        "href": "/doc/515323/",
+        "text": "Entire Act"
+      }
+    ]
+  }
+}

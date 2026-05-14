@@ -1,0 +1,84 @@
+{
+  "document": {
+    "doc_key": "transfer_of_property_act_section_52",
+    "document_type": "act",
+    "title": "Section 52 in The Transfer Of Property Act, 1882",
+    "source_file": "C:\\Users\\sathv\\OneDrive\\Documents\\data-sources\\legal_scraper\\raw_html\\property_rights\\transfer_of_property_act_section_52.html"
+  },
+  "raw_text": "Section 52 in The Transfer Of Property Act, 1882\n\nsource\n\nUnion of India - Section\n\n52. Transfer of property pending suit relating thereto.—\n\nDuring the pendency in any Court having authority within the limits of India excluding the State of Jammu and Kashmir or established beyond such limits by the Central Government of any suit or proceedings which is not collusive and in which any right to immoveable property is directly and specifically in question, the property cannot be transferred or otherwise dealt with by any party to the suit or proceeding so as to affect the rights of any other party thereto under any decree or order which may be made therein, except under the authority of the Court and on such terms as it may impose.\n\nExplanation.—\n\nFor the purposes of this section, the pendency of a suit or proceeding shall be deemed to commence from the date of the presentation of the plaint or the institution of the proceeding in a Court of competent jurisdiction, and to continue until the suit or proceeding has been disposed of by a final decree or order and complete satisfaction or discharge of such decree or order has been obtained, or has become unobtainable by reason of the expiration of any period of limitation prescribed for the execution thereof by any law for the time being in force.",
+  "structured_data": {
+    "article_metadata": {},
+    "article_amendments": [],
+    "article_related_cases": [],
+    "article_keywords": [],
+    "act_metadata": {},
+    "act_sections": [],
+    "act_keywords": [],
+    "section_metadata": {},
+    "case_metadata": {
+      "citation": "Section 52 in The Transfer Of Property Act, 1882",
+      "court": "",
+      "date_of_judgment": "",
+      "jurisdiction": "",
+      "dispute_summary": "",
+      "procedural_history": "",
+      "court_reasoning": "",
+      "verdict_order": "",
+      "plain_english_translation": "",
+      "winner_role": "",
+      "original_text": "Section 52 in The Transfer Of Property Act, 1882\n\nsource\n\nUnion of India - Section\n\n52. Transfer of property pending suit relating thereto.—\n\nDuring the pendency in any Court having authority within the limits of India excluding the State of Jammu and Kashmir or established beyond such limits by the Central Government of any suit or proceedings which is not collusive and in which any right to immoveable property is directly and specifically in question, the property cannot be transferred or otherwise dealt with by any party to the suit or proceeding so as to affect the rights of any other party thereto under any decree or order which may be made therein, except under the authority of the Court and on such terms as it may impose.\n\nExplanation.—\n\nFor the purposes of this section, the pendency of a suit or proceeding shall be deemed to commence from the date of the presentation of the plaint or the institution of the proceeding in a Court of competent jurisdiction, and to continue until the suit or proceeding has been disposed of by a final decree or order and complete satisfaction or discharge of such decree or order has been obtained, or has become unobtainable by reason of the expiration of any period of limitation prescribed for the execution thereof by any law for the time being in force."
+    },
+    "case_judges": [],
+    "case_parties": [],
+    "case_arguments": [],
+    "case_timeline": [],
+    "case_keywords": [],
+    "case_related_acts": [],
+    "case_related_sections": [],
+    "reasoning": [],
+    "important_facts": [],
+    "citations": [
+      "0",
+      "3555",
+      "Entire Act"
+    ],
+    "verdicts": []
+  },
+  "preserved_original_json": {
+    "source_file": "C:\\Users\\sathv\\OneDrive\\Documents\\data-sources\\legal_scraper\\raw_html\\property_rights\\transfer_of_property_act_section_52.html",
+    "document_type": "html",
+    "title": "Section 52 in The Transfer Of Property Act, 1882",
+    "sections": [
+      {
+        "heading": "source",
+        "level": 1,
+        "content": [
+          "Union of India - Section"
+        ]
+      },
+      {
+        "heading": "52. Transfer of property pending suit relating thereto.—",
+        "level": 2,
+        "content": [
+          "During the pendency in any Court having authority within the limits of India excluding the State of Jammu and Kashmir or established beyond such limits by the Central Government of any suit or proceedings which is not collusive and in which any right to immoveable property is directly and specifically in question, the property cannot be transferred or otherwise dealt with by any party to the suit or proceeding so as to affect the rights of any other party thereto under any decree or order which may be made therein, except under the authority of the Court and on such terms as it may impose.",
+          "Explanation.—",
+          "For the purposes of this section, the pendency of a suit or proceeding shall be deemed to commence from the date of the presentation of the plaint or the institution of the proceeding in a Court of competent jurisdiction, and to continue until the suit or proceeding has been disposed of by a final decree or order and complete satisfaction or discharge of such decree or order has been obtained, or has become unobtainable by reason of the expiration of any period of limitation prescribed for the execution thereof by any law for the time being in force."
+        ]
+      }
+    ],
+    "links": [
+      {
+        "href": "/search/?formInput=cites:1634925",
+        "text": "0"
+      },
+      {
+        "href": "/search/?formInput=citedby:1634925",
+        "text": "3555"
+      },
+      {
+        "href": "/doc/515323/",
+        "text": "Entire Act"
+      }
+    ]
+  }
+}

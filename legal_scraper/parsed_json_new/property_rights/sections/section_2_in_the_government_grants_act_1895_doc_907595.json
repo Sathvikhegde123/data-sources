@@ -1,0 +1,80 @@
+{
+  "document": {
+    "doc_key": "section_2_in_the_government_grants_act_1895_doc_907595",
+    "document_type": "act",
+    "title": "Section 2 in The Government Grants Act, 1895",
+    "source_file": "C:\\Users\\sathv\\OneDrive\\Documents\\data-sources\\legal_scraper\\raw_html\\property_rights\\section_2_in_the_government_grants_act_1895_doc_907595.html"
+  },
+  "raw_text": "Section 2 in The Government Grants Act, 1895\n\nsource\n\nUnion of India - Section",
+  "structured_data": {
+    "article_metadata": {},
+    "article_amendments": [],
+    "article_related_cases": [],
+    "article_keywords": [],
+    "act_metadata": {},
+    "act_sections": [],
+    "act_keywords": [],
+    "section_metadata": {},
+    "case_metadata": {
+      "citation": "Section 2 in The Government Grants Act, 1895",
+      "court": "",
+      "date_of_judgment": "",
+      "jurisdiction": "",
+      "dispute_summary": "",
+      "procedural_history": "",
+      "court_reasoning": "",
+      "verdict_order": "",
+      "plain_english_translation": "",
+      "winner_role": "",
+      "original_text": "Section 2 in The Government Grants Act, 1895\n\nsource\n\nUnion of India - Section"
+    },
+    "case_judges": [],
+    "case_parties": [],
+    "case_arguments": [],
+    "case_timeline": [],
+    "case_keywords": [],
+    "case_related_acts": [],
+    "case_related_sections": [],
+    "reasoning": [],
+    "important_facts": [],
+    "citations": [
+      "0",
+      "138",
+      "Entire Act",
+      "4 of 1882"
+    ],
+    "verdicts": []
+  },
+  "preserved_original_json": {
+    "source_file": "C:\\Users\\sathv\\OneDrive\\Documents\\data-sources\\legal_scraper\\raw_html\\property_rights\\section_2_in_the_government_grants_act_1895_doc_907595.html",
+    "document_type": "html",
+    "title": "Section 2 in The Government Grants Act, 1895",
+    "sections": [
+      {
+        "heading": "source",
+        "level": 1,
+        "content": [
+          "Union of India - Section"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "href": "/search/?formInput=cites:907595",
+        "text": "0"
+      },
+      {
+        "href": "/search/?formInput=citedby:907595",
+        "text": "138"
+      },
+      {
+        "href": "/doc/1625086/",
+        "text": "Entire Act"
+      },
+      {
+        "href": "/doc/515323/",
+        "text": "4 of 1882"
+      }
+    ]
+  }
+}

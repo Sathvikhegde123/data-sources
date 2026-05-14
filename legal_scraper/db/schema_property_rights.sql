@@ -101,7 +101,7 @@ CREATE TABLE section_metadata (
   original_text TEXT
 );
 
-CREATE TABLE case_metada(
+CREATE TABLE case_metadata (
   document_id BIGINT PRIMARY KEY REFERENCES documents(id) ON DELETE CASCADE,
   citation TEXT,
   court TEXT,
@@ -111,7 +111,7 @@ CREATE TABLE case_metada(
   procedural_history TEXT,
   court_reasoning TEXT,
   verdict_order TEXT,
-  plain_english_translation Tta EXT,
+  plain_english_translation TEXT,
   winner_role TEXT,
   original_text TEXT
 );

@@ -19,7 +19,7 @@ const emptyState = {
 
 export default function App() {
   const [query, setQuery] = useState("");
-  const [activeFilter, setActiveFilter] = useState("article");
+  const [activeFilter, setActiveFilter] = useState("all");
   const [selected, setSelected] = useState(null);
   const [casesState, setCasesState] = useState(emptyState);
   const [actsState, setActsState] = useState(emptyState);
@@ -77,7 +77,10 @@ export default function App() {
       if (value.length <= limit) {
         return value;
       }
-      return `${value.slice(0, Math.max(0, limit - 3))}...`;
+      const slice = value.slice(0, Math.max(0, limit - 3));
+      const lastSpace = slice.lastIndexOf(" ");
+      const trimmed = lastSpace > 20 ? slice.slice(0, lastSpace) : slice;
+      return `${trimmed}...`;
     };
 
     const extractYear = (value) => {
@@ -162,11 +165,17 @@ export default function App() {
       if (!card.title || card.title.trim().length === 0) {
         return false;
       }
+      const hasHighlight =
+        card.highlight &&
+        Object.values(card.highlight).some(
+          (value) => value && value.toString().trim().length > 0
+        );
       const hasContent =
         (card.subtitle && card.subtitle.trim().length > 0) ||
         (card.meta && card.meta.trim().length > 0) ||
         (card.summary && card.summary.trim().length > 0) ||
-        (card.tags && card.tags.length > 0);
+        (card.tags && card.tags.length > 0) ||
+        hasHighlight;
       if (!hasContent) {
         return false;
       }

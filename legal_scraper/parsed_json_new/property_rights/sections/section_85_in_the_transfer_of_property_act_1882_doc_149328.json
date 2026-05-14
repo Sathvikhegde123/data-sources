@@ -1,0 +1,75 @@
+{
+  "document": {
+    "doc_key": "section_85_in_the_transfer_of_property_act_1882_doc_149328",
+    "document_type": "act",
+    "title": "Section 85 in The Transfer Of Property Act, 1882",
+    "source_file": "C:\\Users\\sathv\\OneDrive\\Documents\\data-sources\\legal_scraper\\raw_html\\property_rights\\section_85_in_the_transfer_of_property_act_1882_doc_149328.html"
+  },
+  "raw_text": "Section 85 in The Transfer Of Property Act, 1882\n\nsource\n\nUnion of India - Section",
+  "structured_data": {
+    "article_metadata": {},
+    "article_amendments": [],
+    "article_related_cases": [],
+    "article_keywords": [],
+    "act_metadata": {},
+    "act_sections": [],
+    "act_keywords": [],
+    "section_metadata": {},
+    "case_metadata": {
+      "citation": "Section 85 in The Transfer Of Property Act, 1882",
+      "court": "",
+      "date_of_judgment": "",
+      "jurisdiction": "",
+      "dispute_summary": "",
+      "procedural_history": "",
+      "court_reasoning": "",
+      "verdict_order": "",
+      "plain_english_translation": "",
+      "winner_role": "",
+      "original_text": "Section 85 in The Transfer Of Property Act, 1882\n\nsource\n\nUnion of India - Section"
+    },
+    "case_judges": [],
+    "case_parties": [],
+    "case_arguments": [],
+    "case_timeline": [],
+    "case_keywords": [],
+    "case_related_acts": [],
+    "case_related_sections": [],
+    "reasoning": [],
+    "important_facts": [],
+    "citations": [
+      "0",
+      "185",
+      "Entire Act"
+    ],
+    "verdicts": []
+  },
+  "preserved_original_json": {
+    "source_file": "C:\\Users\\sathv\\OneDrive\\Documents\\data-sources\\legal_scraper\\raw_html\\property_rights\\section_85_in_the_transfer_of_property_act_1882_doc_149328.html",
+    "document_type": "html",
+    "title": "Section 85 in The Transfer Of Property Act, 1882",
+    "sections": [
+      {
+        "heading": "source",
+        "level": 1,
+        "content": [
+          "Union of India - Section"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "href": "/search/?formInput=cites:149328",
+        "text": "0"
+      },
+      {
+        "href": "/search/?formInput=citedby:149328",
+        "text": "185"
+      },
+      {
+        "href": "/doc/515323/",
+        "text": "Entire Act"
+      }
+    ]
+  }
+}
