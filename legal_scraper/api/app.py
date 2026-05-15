@@ -248,48 +248,27 @@ def explain_relevance(payload: ExplainRequest) -> Dict[str, Any]:
             full_doc_context = "\n\n".join(context_lines)
         
         # Build the prompt with full document context
+        # Unified relevance prompt: concise explanation of relevance (3-4 sentences)
+        # Use the provided prompt template for both full-document and metadata-only cases.
+        context_parts = []
+        context_parts.append(f"User's Property Rights Scenario: {payload.query}")
+        context_parts.append(f"Document Title: {payload.document_title}")
         if full_doc_context:
-            prompt = f"""Based on the following property rights legal document and the user's scenario, 
-explain in 3-4 sentences how this document/case IS or IS NOT relevant to their situation. 
-Be specific about which aspects match or don't match.
+            context_parts.append(f"Document Content:\n{full_doc_context}")
+        elif payload.document_summary:
+            context_parts.append(f"Document Summary: {payload.document_summary}")
+        elif payload.case_metadata and isinstance(payload.case_metadata, dict):
+            meta = payload.case_metadata
+            if meta.get("dispute_summary"):
+                context_parts.append(f"Dispute: {meta['dispute_summary'][:500]}")
+        context = "\n\n".join(context_parts)
 
-USER'S PROPERTY RIGHTS SCENARIO:
-{payload.query}
-
-LEGAL DOCUMENT CONTENT:
-{full_doc_context}
-
-DOCUMENT TITLE: {payload.document_title}
-
-Provide a clear, detailed explanation of relevance without legal jargon. 
-Focus on practical applicability to their situation."""
-        else:
-            # Fallback to metadata-only if no full document
-            context_parts = [
-                f"User's Property Rights Scenario: {payload.query}",
-                f"Document Title: {payload.document_title}",
-            ]
-            
-            if payload.document_summary:
-                context_parts.append(f"Document Summary: {payload.document_summary}")
-            
-            if payload.case_metadata:
-                meta = payload.case_metadata
-                if isinstance(meta, dict):
-                    if meta.get("court"):
-                        context_parts.append(f"Court: {meta['court']}")
-                    if meta.get("dispute_summary"):
-                        context_parts.append(f"Dispute: {meta['dispute_summary'][:500]}")
-                    if meta.get("verdict_order"):
-                        context_parts.append(f"Verdict: {meta['verdict_order'][:500]}")
-            
-            context = "\n".join(context_parts)
-            
-            prompt = f"""Based on this information, explain in 3-4 sentences how this legal document/case is relevant to the user's property rights scenario.
+        prompt = f"""Based on this information, explain in 3-4 sentences how this legal document/case is relevant to the user's property rights scenario.Only explain how its relevant.Do not give what does not match.
 
 {context}
 
-Provide a clear explanation of the relevance without legal jargon."""
+Provide a clear explanation of the relevance without legal jargon.Do not tell this document is not relevant.Only explain what is the similarity."""
+        # prompt already constructed above
 
         # Try different model names as fallback
         models_to_try = ["gemini-2.5-flash"]
